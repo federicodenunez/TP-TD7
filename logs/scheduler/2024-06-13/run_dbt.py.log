@@ -1,0 +1,1030 @@
+[2024-06-13T21:01:51.068+0000] {processor.py:161} INFO - Started process (PID=13) to work on /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:01:51.069+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/run_dbt.py for tasks to queue
+[2024-06-13T21:01:51.070+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:01:51.070+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:01:51.077+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:01:51.076+0000] {graph.py:242} INFO - Trying to parse the dbt project in `/opt/airflow/dbt_tp` using dbt ls...
+[2024-06-13T21:01:51.078+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:01:51.078+0000] {graph.py:252} INFO - Content of the dbt project dir /opt/airflow/dbt_tp: `['.user.yml', 'dependencies.yml', 'profiles.yml', 'snapshots', 'package-lock.yml', 'Dockerfile', 'tests', 'models', 'README.md', 'macros', '.dockerignore', '.gitignore', 'seeds', 'analyses', 'dbt_project.yml']`
+[2024-06-13T21:01:51.079+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:01:51.079+0000] {graph.py:262} INFO - Partial parse is enabled and the latest partial parse file is None
+[2024-06-13T21:01:51.079+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:01:51.079+0000] {base.py:222} INFO - Using mock values for profile dbt_tp
+[2024-06-13T21:01:51.080+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:01:51.080+0000] {config.py:291} INFO - Creating temporary profiles.yml with use_mock_values=True at /tmp/tmp5kd54c9h/profiles.yml with the following contents:
+dbt_tp:
+    outputs:
+        dev:
+            dbname: postgres
+            host: mock_value
+            password: mock_value
+            port: 5432
+            schema: public
+            type: postgres
+            user: mock_value
+    target: dev
+[2024-06-13T21:01:51.081+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:01:51.081+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt deps --project-dir /tmp/tmpu5gmq70b --profiles-dir /tmp/tmp5kd54c9h --profile dbt_tp --target dev`
+[2024-06-13T21:01:57.387+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:01:57.387+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt ls --output json --project-dir /tmp/tmpu5gmq70b --profiles-dir /tmp/tmp5kd54c9h --profile dbt_tp --target dev`
+[2024-06-13T21:02:02.336+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:02:02.336+0000] {graph.py:190} INFO - Total nodes: 6
+[2024-06-13T21:02:02.336+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:02:02.336+0000] {graph.py:191} INFO - Total filtered nodes: 6
+[2024-06-13T21:02:02.338+0000] {processor.py:840} INFO - DAG(s) 'run_dbt' retrieved from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:02:02.370+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:02:02.369+0000] {override.py:1829} INFO - Created Permission View: can delete on DAG:run_dbt
+[2024-06-13T21:02:02.373+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:02:02.373+0000] {override.py:1829} INFO - Created Permission View: can edit on DAG:run_dbt
+[2024-06-13T21:02:02.376+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:02:02.376+0000] {override.py:1829} INFO - Created Permission View: can read on DAG:run_dbt
+[2024-06-13T21:02:02.376+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:02:02.376+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-13T21:02:02.380+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:02:02.379+0000] {dag.py:3118} INFO - Creating ORM DAG for run_dbt
+[2024-06-13T21:02:02.380+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:02:02.380+0000] {dag.py:3954} INFO - Setting next_dagrun for run_dbt to None, run_after=None
+[2024-06-13T21:02:02.386+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/run_dbt.py took 11.321 seconds
+[2024-06-13T21:02:32.562+0000] {processor.py:161} INFO - Started process (PID=48) to work on /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:02:32.564+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/run_dbt.py for tasks to queue
+[2024-06-13T21:02:32.567+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:02:32.566+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:02:32.578+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:02:32.577+0000] {graph.py:242} INFO - Trying to parse the dbt project in `/opt/airflow/dbt_tp` using dbt ls...
+[2024-06-13T21:02:32.579+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:02:32.579+0000] {graph.py:252} INFO - Content of the dbt project dir /opt/airflow/dbt_tp: `['.user.yml', 'dependencies.yml', 'profiles.yml', 'snapshots', 'package-lock.yml', 'Dockerfile', 'tests', 'models', 'README.md', 'macros', '.dockerignore', '.gitignore', 'seeds', 'analyses', 'dbt_project.yml']`
+[2024-06-13T21:02:32.581+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:02:32.581+0000] {graph.py:262} INFO - Partial parse is enabled and the latest partial parse file is /tmp/cosmos/run_dbt__dbt_task_group/target/partial_parse.msgpack
+[2024-06-13T21:02:32.591+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:02:32.590+0000] {base.py:222} INFO - Using mock values for profile dbt_tp
+[2024-06-13T21:02:32.592+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:02:32.592+0000] {config.py:291} INFO - Creating temporary profiles.yml with use_mock_values=True at /tmp/tmpqimh2aya/profiles.yml with the following contents:
+dbt_tp:
+    outputs:
+        dev:
+            dbname: postgres
+            host: mock_value
+            password: mock_value
+            port: 5432
+            schema: public
+            type: postgres
+            user: mock_value
+    target: dev
+[2024-06-13T21:02:32.593+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:02:32.592+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt deps --project-dir /tmp/tmpudez0e1i --profiles-dir /tmp/tmpqimh2aya --profile dbt_tp --target dev`
+[2024-06-13T21:02:36.384+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:02:36.384+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt ls --output json --project-dir /tmp/tmpudez0e1i --profiles-dir /tmp/tmpqimh2aya --profile dbt_tp --target dev`
+[2024-06-13T21:02:39.345+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:02:39.345+0000] {graph.py:190} INFO - Total nodes: 6
+[2024-06-13T21:02:39.346+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:02:39.346+0000] {graph.py:191} INFO - Total filtered nodes: 6
+[2024-06-13T21:02:39.348+0000] {processor.py:840} INFO - DAG(s) 'run_dbt' retrieved from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:02:39.358+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:02:39.358+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-13T21:02:39.362+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:02:39.362+0000] {dag.py:3954} INFO - Setting next_dagrun for run_dbt to None, run_after=None
+[2024-06-13T21:02:39.370+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/run_dbt.py took 6.819 seconds
+[2024-06-13T21:03:09.557+0000] {processor.py:161} INFO - Started process (PID=65) to work on /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:03:09.559+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/run_dbt.py for tasks to queue
+[2024-06-13T21:03:09.561+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:03:09.561+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:03:09.572+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:03:09.572+0000] {graph.py:242} INFO - Trying to parse the dbt project in `/opt/airflow/dbt_tp` using dbt ls...
+[2024-06-13T21:03:09.574+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:03:09.574+0000] {graph.py:252} INFO - Content of the dbt project dir /opt/airflow/dbt_tp: `['.user.yml', 'dependencies.yml', 'profiles.yml', 'snapshots', 'package-lock.yml', 'Dockerfile', 'tests', 'models', 'README.md', 'macros', '.dockerignore', '.gitignore', 'seeds', 'analyses', 'dbt_project.yml']`
+[2024-06-13T21:03:09.576+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:03:09.576+0000] {graph.py:262} INFO - Partial parse is enabled and the latest partial parse file is /tmp/cosmos/run_dbt__dbt_task_group/target/partial_parse.msgpack
+[2024-06-13T21:03:09.584+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:03:09.584+0000] {base.py:222} INFO - Using mock values for profile dbt_tp
+[2024-06-13T21:03:09.586+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:03:09.586+0000] {config.py:291} INFO - Creating temporary profiles.yml with use_mock_values=True at /tmp/tmpls6pjrja/profiles.yml with the following contents:
+dbt_tp:
+    outputs:
+        dev:
+            dbname: postgres
+            host: mock_value
+            password: mock_value
+            port: 5432
+            schema: public
+            type: postgres
+            user: mock_value
+    target: dev
+[2024-06-13T21:03:09.586+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:03:09.586+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt deps --project-dir /tmp/tmpf2mz3sfi --profiles-dir /tmp/tmpls6pjrja --profile dbt_tp --target dev`
+[2024-06-13T21:03:11.776+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:03:11.776+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt ls --output json --project-dir /tmp/tmpf2mz3sfi --profiles-dir /tmp/tmpls6pjrja --profile dbt_tp --target dev`
+[2024-06-13T21:03:13.459+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:03:13.458+0000] {graph.py:190} INFO - Total nodes: 6
+[2024-06-13T21:03:13.459+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:03:13.459+0000] {graph.py:191} INFO - Total filtered nodes: 6
+[2024-06-13T21:03:13.461+0000] {processor.py:840} INFO - DAG(s) 'run_dbt' retrieved from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:03:13.469+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:03:13.469+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-13T21:03:13.473+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:03:13.472+0000] {dag.py:3954} INFO - Setting next_dagrun for run_dbt to None, run_after=None
+[2024-06-13T21:03:13.480+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/run_dbt.py took 3.930 seconds
+[2024-06-13T21:03:43.625+0000] {processor.py:161} INFO - Started process (PID=82) to work on /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:03:43.626+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/run_dbt.py for tasks to queue
+[2024-06-13T21:03:43.629+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:03:43.628+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:03:43.637+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:03:43.636+0000] {graph.py:242} INFO - Trying to parse the dbt project in `/opt/airflow/dbt_tp` using dbt ls...
+[2024-06-13T21:03:43.639+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:03:43.638+0000] {graph.py:252} INFO - Content of the dbt project dir /opt/airflow/dbt_tp: `['.user.yml', 'dependencies.yml', 'profiles.yml', 'snapshots', 'package-lock.yml', 'Dockerfile', 'tests', 'models', 'README.md', 'macros', '.dockerignore', '.gitignore', 'seeds', 'analyses', 'dbt_project.yml']`
+[2024-06-13T21:03:43.640+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:03:43.640+0000] {graph.py:262} INFO - Partial parse is enabled and the latest partial parse file is /tmp/cosmos/run_dbt__dbt_task_group/target/partial_parse.msgpack
+[2024-06-13T21:03:43.648+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:03:43.648+0000] {base.py:222} INFO - Using mock values for profile dbt_tp
+[2024-06-13T21:03:43.650+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:03:43.650+0000] {config.py:291} INFO - Creating temporary profiles.yml with use_mock_values=True at /tmp/tmpej203m_8/profiles.yml with the following contents:
+dbt_tp:
+    outputs:
+        dev:
+            dbname: postgres
+            host: mock_value
+            password: mock_value
+            port: 5432
+            schema: public
+            type: postgres
+            user: mock_value
+    target: dev
+[2024-06-13T21:03:43.651+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:03:43.650+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt deps --project-dir /tmp/tmpg9hk_6_d --profiles-dir /tmp/tmpej203m_8 --profile dbt_tp --target dev`
+[2024-06-13T21:03:45.881+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:03:45.881+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt ls --output json --project-dir /tmp/tmpg9hk_6_d --profiles-dir /tmp/tmpej203m_8 --profile dbt_tp --target dev`
+[2024-06-13T21:03:47.772+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:03:47.772+0000] {graph.py:190} INFO - Total nodes: 6
+[2024-06-13T21:03:47.772+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:03:47.772+0000] {graph.py:191} INFO - Total filtered nodes: 6
+[2024-06-13T21:03:47.774+0000] {processor.py:840} INFO - DAG(s) 'run_dbt' retrieved from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:03:47.783+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:03:47.783+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-13T21:03:47.787+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:03:47.787+0000] {dag.py:3954} INFO - Setting next_dagrun for run_dbt to None, run_after=None
+[2024-06-13T21:03:47.795+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/run_dbt.py took 4.176 seconds
+[2024-06-13T21:04:17.976+0000] {processor.py:161} INFO - Started process (PID=99) to work on /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:04:17.977+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/run_dbt.py for tasks to queue
+[2024-06-13T21:04:17.980+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:04:17.979+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:04:17.989+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:04:17.989+0000] {graph.py:242} INFO - Trying to parse the dbt project in `/opt/airflow/dbt_tp` using dbt ls...
+[2024-06-13T21:04:17.991+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:04:17.990+0000] {graph.py:252} INFO - Content of the dbt project dir /opt/airflow/dbt_tp: `['.user.yml', 'dependencies.yml', 'profiles.yml', 'snapshots', 'package-lock.yml', 'Dockerfile', 'tests', 'models', 'README.md', 'macros', '.dockerignore', '.gitignore', 'seeds', 'analyses', 'dbt_project.yml']`
+[2024-06-13T21:04:17.992+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:04:17.992+0000] {graph.py:262} INFO - Partial parse is enabled and the latest partial parse file is /tmp/cosmos/run_dbt__dbt_task_group/target/partial_parse.msgpack
+[2024-06-13T21:04:17.998+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:04:17.998+0000] {base.py:222} INFO - Using mock values for profile dbt_tp
+[2024-06-13T21:04:18.000+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:04:18.000+0000] {config.py:291} INFO - Creating temporary profiles.yml with use_mock_values=True at /tmp/tmppgpsa28v/profiles.yml with the following contents:
+dbt_tp:
+    outputs:
+        dev:
+            dbname: postgres
+            host: mock_value
+            password: mock_value
+            port: 5432
+            schema: public
+            type: postgres
+            user: mock_value
+    target: dev
+[2024-06-13T21:04:18.001+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:04:18.001+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt deps --project-dir /tmp/tmpu0yaszda --profiles-dir /tmp/tmppgpsa28v --profile dbt_tp --target dev`
+[2024-06-13T21:04:20.663+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:04:20.663+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt ls --output json --project-dir /tmp/tmpu0yaszda --profiles-dir /tmp/tmppgpsa28v --profile dbt_tp --target dev`
+[2024-06-13T21:04:22.297+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:04:22.297+0000] {graph.py:190} INFO - Total nodes: 6
+[2024-06-13T21:04:22.297+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:04:22.297+0000] {graph.py:191} INFO - Total filtered nodes: 6
+[2024-06-13T21:04:22.299+0000] {processor.py:840} INFO - DAG(s) 'run_dbt' retrieved from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:04:22.309+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:04:22.309+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-13T21:04:22.314+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:04:22.314+0000] {dag.py:3954} INFO - Setting next_dagrun for run_dbt to None, run_after=None
+[2024-06-13T21:04:22.324+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/run_dbt.py took 4.355 seconds
+[2024-06-13T21:04:52.494+0000] {processor.py:161} INFO - Started process (PID=116) to work on /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:04:52.495+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/run_dbt.py for tasks to queue
+[2024-06-13T21:04:52.496+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:04:52.496+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:04:52.500+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:04:52.500+0000] {graph.py:242} INFO - Trying to parse the dbt project in `/opt/airflow/dbt_tp` using dbt ls...
+[2024-06-13T21:04:52.501+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:04:52.501+0000] {graph.py:252} INFO - Content of the dbt project dir /opt/airflow/dbt_tp: `['.user.yml', 'dependencies.yml', 'profiles.yml', 'snapshots', 'package-lock.yml', 'Dockerfile', 'tests', 'models', 'README.md', 'macros', '.dockerignore', '.gitignore', 'seeds', 'analyses', 'dbt_project.yml']`
+[2024-06-13T21:04:52.502+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:04:52.502+0000] {graph.py:262} INFO - Partial parse is enabled and the latest partial parse file is /tmp/cosmos/run_dbt__dbt_task_group/target/partial_parse.msgpack
+[2024-06-13T21:04:52.506+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:04:52.506+0000] {base.py:222} INFO - Using mock values for profile dbt_tp
+[2024-06-13T21:04:52.507+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:04:52.507+0000] {config.py:291} INFO - Creating temporary profiles.yml with use_mock_values=True at /tmp/tmpkxomki9z/profiles.yml with the following contents:
+dbt_tp:
+    outputs:
+        dev:
+            dbname: postgres
+            host: mock_value
+            password: mock_value
+            port: 5432
+            schema: public
+            type: postgres
+            user: mock_value
+    target: dev
+[2024-06-13T21:04:52.507+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:04:52.507+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt deps --project-dir /tmp/tmpf2rdrn7r --profiles-dir /tmp/tmpkxomki9z --profile dbt_tp --target dev`
+[2024-06-13T21:04:54.629+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:04:54.629+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt ls --output json --project-dir /tmp/tmpf2rdrn7r --profiles-dir /tmp/tmpkxomki9z --profile dbt_tp --target dev`
+[2024-06-13T21:04:56.782+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:04:56.782+0000] {graph.py:190} INFO - Total nodes: 6
+[2024-06-13T21:04:56.783+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:04:56.783+0000] {graph.py:191} INFO - Total filtered nodes: 6
+[2024-06-13T21:04:56.784+0000] {processor.py:840} INFO - DAG(s) 'run_dbt' retrieved from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:04:56.792+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:04:56.792+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-13T21:04:56.796+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:04:56.796+0000] {dag.py:3954} INFO - Setting next_dagrun for run_dbt to None, run_after=None
+[2024-06-13T21:04:56.846+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/run_dbt.py took 4.354 seconds
+[2024-06-13T21:05:27.007+0000] {processor.py:161} INFO - Started process (PID=133) to work on /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:05:27.008+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/run_dbt.py for tasks to queue
+[2024-06-13T21:05:27.010+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:05:27.010+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:05:27.018+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:05:27.018+0000] {graph.py:242} INFO - Trying to parse the dbt project in `/opt/airflow/dbt_tp` using dbt ls...
+[2024-06-13T21:05:27.020+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:05:27.020+0000] {graph.py:252} INFO - Content of the dbt project dir /opt/airflow/dbt_tp: `['.user.yml', 'dependencies.yml', 'profiles.yml', 'snapshots', 'package-lock.yml', 'Dockerfile', 'tests', 'models', 'README.md', 'macros', '.dockerignore', '.gitignore', 'seeds', 'analyses', 'dbt_project.yml']`
+[2024-06-13T21:05:27.022+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:05:27.022+0000] {graph.py:262} INFO - Partial parse is enabled and the latest partial parse file is /tmp/cosmos/run_dbt__dbt_task_group/target/partial_parse.msgpack
+[2024-06-13T21:05:27.028+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:05:27.028+0000] {base.py:222} INFO - Using mock values for profile dbt_tp
+[2024-06-13T21:05:27.029+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:05:27.029+0000] {config.py:291} INFO - Creating temporary profiles.yml with use_mock_values=True at /tmp/tmp_ylm42sv/profiles.yml with the following contents:
+dbt_tp:
+    outputs:
+        dev:
+            dbname: postgres
+            host: mock_value
+            password: mock_value
+            port: 5432
+            schema: public
+            type: postgres
+            user: mock_value
+    target: dev
+[2024-06-13T21:05:27.030+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:05:27.030+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt deps --project-dir /tmp/tmpl7rgghe0 --profiles-dir /tmp/tmp_ylm42sv --profile dbt_tp --target dev`
+[2024-06-13T21:05:29.275+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:05:29.275+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt ls --output json --project-dir /tmp/tmpl7rgghe0 --profiles-dir /tmp/tmp_ylm42sv --profile dbt_tp --target dev`
+[2024-06-13T21:05:31.093+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:05:31.093+0000] {graph.py:190} INFO - Total nodes: 6
+[2024-06-13T21:05:31.093+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:05:31.093+0000] {graph.py:191} INFO - Total filtered nodes: 6
+[2024-06-13T21:05:31.095+0000] {processor.py:840} INFO - DAG(s) 'run_dbt' retrieved from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:05:31.103+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:05:31.103+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-13T21:05:31.150+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:05:31.149+0000] {dag.py:3954} INFO - Setting next_dagrun for run_dbt to None, run_after=None
+[2024-06-13T21:05:31.157+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/run_dbt.py took 4.157 seconds
+[2024-06-13T21:06:01.260+0000] {processor.py:161} INFO - Started process (PID=150) to work on /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:06:01.261+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/run_dbt.py for tasks to queue
+[2024-06-13T21:06:01.261+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:06:01.261+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:06:01.266+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:06:01.265+0000] {graph.py:242} INFO - Trying to parse the dbt project in `/opt/airflow/dbt_tp` using dbt ls...
+[2024-06-13T21:06:01.267+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:06:01.267+0000] {graph.py:252} INFO - Content of the dbt project dir /opt/airflow/dbt_tp: `['.user.yml', 'dependencies.yml', 'profiles.yml', 'snapshots', 'package-lock.yml', 'Dockerfile', 'tests', 'models', 'README.md', 'macros', '.dockerignore', '.gitignore', 'seeds', 'analyses', 'dbt_project.yml']`
+[2024-06-13T21:06:01.268+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:06:01.268+0000] {graph.py:262} INFO - Partial parse is enabled and the latest partial parse file is /tmp/cosmos/run_dbt__dbt_task_group/target/partial_parse.msgpack
+[2024-06-13T21:06:01.273+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:06:01.272+0000] {base.py:222} INFO - Using mock values for profile dbt_tp
+[2024-06-13T21:06:01.274+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:06:01.274+0000] {config.py:291} INFO - Creating temporary profiles.yml with use_mock_values=True at /tmp/tmp9tr88yva/profiles.yml with the following contents:
+dbt_tp:
+    outputs:
+        dev:
+            dbname: postgres
+            host: mock_value
+            password: mock_value
+            port: 5432
+            schema: public
+            type: postgres
+            user: mock_value
+    target: dev
+[2024-06-13T21:06:01.274+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:06:01.274+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt deps --project-dir /tmp/tmp4575byjt --profiles-dir /tmp/tmp9tr88yva --profile dbt_tp --target dev`
+[2024-06-13T21:06:03.801+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:06:03.801+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt ls --output json --project-dir /tmp/tmp4575byjt --profiles-dir /tmp/tmp9tr88yva --profile dbt_tp --target dev`
+[2024-06-13T21:06:05.365+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:06:05.364+0000] {graph.py:190} INFO - Total nodes: 6
+[2024-06-13T21:06:05.365+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:06:05.365+0000] {graph.py:191} INFO - Total filtered nodes: 6
+[2024-06-13T21:06:05.367+0000] {processor.py:840} INFO - DAG(s) 'run_dbt' retrieved from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:06:05.420+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:06:05.420+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-13T21:06:05.423+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:06:05.423+0000] {dag.py:3954} INFO - Setting next_dagrun for run_dbt to None, run_after=None
+[2024-06-13T21:06:05.433+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/run_dbt.py took 4.176 seconds
+[2024-06-13T21:06:35.610+0000] {processor.py:161} INFO - Started process (PID=167) to work on /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:06:35.611+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/run_dbt.py for tasks to queue
+[2024-06-13T21:06:35.614+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:06:35.614+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:06:35.623+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:06:35.623+0000] {graph.py:242} INFO - Trying to parse the dbt project in `/opt/airflow/dbt_tp` using dbt ls...
+[2024-06-13T21:06:35.625+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:06:35.625+0000] {graph.py:252} INFO - Content of the dbt project dir /opt/airflow/dbt_tp: `['.user.yml', 'dependencies.yml', 'profiles.yml', 'snapshots', 'package-lock.yml', 'Dockerfile', 'tests', 'models', 'README.md', 'macros', '.dockerignore', '.gitignore', 'seeds', 'analyses', 'dbt_project.yml']`
+[2024-06-13T21:06:35.627+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:06:35.626+0000] {graph.py:262} INFO - Partial parse is enabled and the latest partial parse file is /tmp/cosmos/run_dbt__dbt_task_group/target/partial_parse.msgpack
+[2024-06-13T21:06:35.633+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:06:35.633+0000] {base.py:222} INFO - Using mock values for profile dbt_tp
+[2024-06-13T21:06:35.634+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:06:35.634+0000] {config.py:291} INFO - Creating temporary profiles.yml with use_mock_values=True at /tmp/tmp672unmas/profiles.yml with the following contents:
+dbt_tp:
+    outputs:
+        dev:
+            dbname: postgres
+            host: mock_value
+            password: mock_value
+            port: 5432
+            schema: public
+            type: postgres
+            user: mock_value
+    target: dev
+[2024-06-13T21:06:35.635+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:06:35.635+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt deps --project-dir /tmp/tmps1t_lnxd --profiles-dir /tmp/tmp672unmas --profile dbt_tp --target dev`
+[2024-06-13T21:06:38.060+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:06:38.060+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt ls --output json --project-dir /tmp/tmps1t_lnxd --profiles-dir /tmp/tmp672unmas --profile dbt_tp --target dev`
+[2024-06-13T21:06:39.680+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:06:39.680+0000] {graph.py:190} INFO - Total nodes: 6
+[2024-06-13T21:06:39.681+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:06:39.680+0000] {graph.py:191} INFO - Total filtered nodes: 6
+[2024-06-13T21:06:39.682+0000] {processor.py:840} INFO - DAG(s) 'run_dbt' retrieved from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:06:39.735+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:06:39.735+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-13T21:06:39.739+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:06:39.739+0000] {dag.py:3954} INFO - Setting next_dagrun for run_dbt to None, run_after=None
+[2024-06-13T21:06:39.749+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/run_dbt.py took 4.146 seconds
+[2024-06-13T21:07:09.927+0000] {processor.py:161} INFO - Started process (PID=184) to work on /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:07:09.928+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/run_dbt.py for tasks to queue
+[2024-06-13T21:07:09.930+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:07:09.930+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:07:09.937+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:07:09.937+0000] {graph.py:242} INFO - Trying to parse the dbt project in `/opt/airflow/dbt_tp` using dbt ls...
+[2024-06-13T21:07:09.939+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:07:09.939+0000] {graph.py:252} INFO - Content of the dbt project dir /opt/airflow/dbt_tp: `['.user.yml', 'dependencies.yml', 'profiles.yml', 'snapshots', 'package-lock.yml', 'Dockerfile', 'tests', 'models', 'README.md', 'macros', '.dockerignore', '.gitignore', 'seeds', 'analyses', 'dbt_project.yml']`
+[2024-06-13T21:07:09.940+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:07:09.940+0000] {graph.py:262} INFO - Partial parse is enabled and the latest partial parse file is /tmp/cosmos/run_dbt__dbt_task_group/target/partial_parse.msgpack
+[2024-06-13T21:07:10.010+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:07:10.010+0000] {base.py:222} INFO - Using mock values for profile dbt_tp
+[2024-06-13T21:07:10.011+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:07:10.011+0000] {config.py:291} INFO - Creating temporary profiles.yml with use_mock_values=True at /tmp/tmpir63wzex/profiles.yml with the following contents:
+dbt_tp:
+    outputs:
+        dev:
+            dbname: postgres
+            host: mock_value
+            password: mock_value
+            port: 5432
+            schema: public
+            type: postgres
+            user: mock_value
+    target: dev
+[2024-06-13T21:07:10.011+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:07:10.011+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt deps --project-dir /tmp/tmpdz9qzv5x --profiles-dir /tmp/tmpir63wzex --profile dbt_tp --target dev`
+[2024-06-13T21:07:12.528+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:07:12.528+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt ls --output json --project-dir /tmp/tmpdz9qzv5x --profiles-dir /tmp/tmpir63wzex --profile dbt_tp --target dev`
+[2024-06-13T21:07:14.537+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:07:14.537+0000] {graph.py:190} INFO - Total nodes: 6
+[2024-06-13T21:07:14.537+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:07:14.537+0000] {graph.py:191} INFO - Total filtered nodes: 6
+[2024-06-13T21:07:14.538+0000] {processor.py:840} INFO - DAG(s) 'run_dbt' retrieved from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:07:14.545+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:07:14.544+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-13T21:07:14.547+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:07:14.547+0000] {dag.py:3954} INFO - Setting next_dagrun for run_dbt to None, run_after=None
+[2024-06-13T21:07:14.555+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/run_dbt.py took 4.634 seconds
+[2024-06-13T21:07:44.738+0000] {processor.py:161} INFO - Started process (PID=201) to work on /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:07:44.740+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/run_dbt.py for tasks to queue
+[2024-06-13T21:07:44.742+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:07:44.742+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:07:44.751+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:07:44.751+0000] {graph.py:242} INFO - Trying to parse the dbt project in `/opt/airflow/dbt_tp` using dbt ls...
+[2024-06-13T21:07:44.753+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:07:44.753+0000] {graph.py:252} INFO - Content of the dbt project dir /opt/airflow/dbt_tp: `['.user.yml', 'dependencies.yml', 'profiles.yml', 'snapshots', 'package-lock.yml', 'Dockerfile', 'tests', 'models', 'README.md', 'macros', '.dockerignore', '.gitignore', 'seeds', 'analyses', 'dbt_project.yml']`
+[2024-06-13T21:07:44.755+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:07:44.755+0000] {graph.py:262} INFO - Partial parse is enabled and the latest partial parse file is /tmp/cosmos/run_dbt__dbt_task_group/target/partial_parse.msgpack
+[2024-06-13T21:07:44.826+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:07:44.826+0000] {base.py:222} INFO - Using mock values for profile dbt_tp
+[2024-06-13T21:07:44.827+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:07:44.826+0000] {config.py:291} INFO - Creating temporary profiles.yml with use_mock_values=True at /tmp/tmpc8upnh4k/profiles.yml with the following contents:
+dbt_tp:
+    outputs:
+        dev:
+            dbname: postgres
+            host: mock_value
+            password: mock_value
+            port: 5432
+            schema: public
+            type: postgres
+            user: mock_value
+    target: dev
+[2024-06-13T21:07:44.827+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:07:44.827+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt deps --project-dir /tmp/tmpvtkrpykl --profiles-dir /tmp/tmpc8upnh4k --profile dbt_tp --target dev`
+[2024-06-13T21:07:46.925+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:07:46.925+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt ls --output json --project-dir /tmp/tmpvtkrpykl --profiles-dir /tmp/tmpc8upnh4k --profile dbt_tp --target dev`
+[2024-06-13T21:07:48.418+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:07:48.418+0000] {graph.py:190} INFO - Total nodes: 6
+[2024-06-13T21:07:48.418+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:07:48.418+0000] {graph.py:191} INFO - Total filtered nodes: 6
+[2024-06-13T21:07:48.420+0000] {processor.py:840} INFO - DAG(s) 'run_dbt' retrieved from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:07:48.426+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:07:48.426+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-13T21:07:48.429+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:07:48.429+0000] {dag.py:3954} INFO - Setting next_dagrun for run_dbt to None, run_after=None
+[2024-06-13T21:07:48.436+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/run_dbt.py took 3.703 seconds
+[2024-06-13T21:08:18.615+0000] {processor.py:161} INFO - Started process (PID=218) to work on /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:08:18.616+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/run_dbt.py for tasks to queue
+[2024-06-13T21:08:18.618+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:08:18.618+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:08:18.626+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:08:18.626+0000] {graph.py:242} INFO - Trying to parse the dbt project in `/opt/airflow/dbt_tp` using dbt ls...
+[2024-06-13T21:08:18.628+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:08:18.628+0000] {graph.py:252} INFO - Content of the dbt project dir /opt/airflow/dbt_tp: `['.user.yml', 'dependencies.yml', 'profiles.yml', 'snapshots', 'package-lock.yml', 'Dockerfile', 'tests', 'models', 'README.md', 'macros', '.dockerignore', '.gitignore', 'seeds', 'analyses', 'dbt_project.yml']`
+[2024-06-13T21:08:18.630+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:08:18.629+0000] {graph.py:262} INFO - Partial parse is enabled and the latest partial parse file is /tmp/cosmos/run_dbt__dbt_task_group/target/partial_parse.msgpack
+[2024-06-13T21:08:18.689+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:08:18.689+0000] {base.py:222} INFO - Using mock values for profile dbt_tp
+[2024-06-13T21:08:18.690+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:08:18.690+0000] {config.py:291} INFO - Creating temporary profiles.yml with use_mock_values=True at /tmp/tmpm7bcwclc/profiles.yml with the following contents:
+dbt_tp:
+    outputs:
+        dev:
+            dbname: postgres
+            host: mock_value
+            password: mock_value
+            port: 5432
+            schema: public
+            type: postgres
+            user: mock_value
+    target: dev
+[2024-06-13T21:08:18.691+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:08:18.690+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt deps --project-dir /tmp/tmphmqu9gtq --profiles-dir /tmp/tmpm7bcwclc --profile dbt_tp --target dev`
+[2024-06-13T21:08:20.778+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:08:20.778+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt ls --output json --project-dir /tmp/tmphmqu9gtq --profiles-dir /tmp/tmpm7bcwclc --profile dbt_tp --target dev`
+[2024-06-13T21:08:22.214+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:08:22.214+0000] {graph.py:190} INFO - Total nodes: 6
+[2024-06-13T21:08:22.215+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:08:22.215+0000] {graph.py:191} INFO - Total filtered nodes: 6
+[2024-06-13T21:08:22.216+0000] {processor.py:840} INFO - DAG(s) 'run_dbt' retrieved from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:08:22.222+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:08:22.222+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-13T21:08:22.225+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:08:22.225+0000] {dag.py:3954} INFO - Setting next_dagrun for run_dbt to None, run_after=None
+[2024-06-13T21:08:22.232+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/run_dbt.py took 3.628 seconds
+[2024-06-13T21:08:52.347+0000] {processor.py:161} INFO - Started process (PID=235) to work on /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:08:52.348+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/run_dbt.py for tasks to queue
+[2024-06-13T21:08:52.350+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:08:52.350+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:08:52.358+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:08:52.357+0000] {graph.py:242} INFO - Trying to parse the dbt project in `/opt/airflow/dbt_tp` using dbt ls...
+[2024-06-13T21:08:52.359+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:08:52.359+0000] {graph.py:252} INFO - Content of the dbt project dir /opt/airflow/dbt_tp: `['.user.yml', 'dependencies.yml', 'profiles.yml', 'snapshots', 'package-lock.yml', 'Dockerfile', 'tests', 'models', 'README.md', 'macros', '.dockerignore', '.gitignore', 'seeds', 'analyses', 'dbt_project.yml']`
+[2024-06-13T21:08:52.361+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:08:52.361+0000] {graph.py:262} INFO - Partial parse is enabled and the latest partial parse file is /tmp/cosmos/run_dbt__dbt_task_group/target/partial_parse.msgpack
+[2024-06-13T21:08:52.440+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:08:52.440+0000] {base.py:222} INFO - Using mock values for profile dbt_tp
+[2024-06-13T21:08:52.442+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:08:52.442+0000] {config.py:291} INFO - Creating temporary profiles.yml with use_mock_values=True at /tmp/tmpyhw6rgnw/profiles.yml with the following contents:
+dbt_tp:
+    outputs:
+        dev:
+            dbname: postgres
+            host: mock_value
+            password: mock_value
+            port: 5432
+            schema: public
+            type: postgres
+            user: mock_value
+    target: dev
+[2024-06-13T21:08:52.443+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:08:52.443+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt deps --project-dir /tmp/tmppdzysarz --profiles-dir /tmp/tmpyhw6rgnw --profile dbt_tp --target dev`
+[2024-06-13T21:08:54.494+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:08:54.493+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt ls --output json --project-dir /tmp/tmppdzysarz --profiles-dir /tmp/tmpyhw6rgnw --profile dbt_tp --target dev`
+[2024-06-13T21:08:55.981+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:08:55.981+0000] {graph.py:190} INFO - Total nodes: 6
+[2024-06-13T21:08:55.981+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:08:55.981+0000] {graph.py:191} INFO - Total filtered nodes: 6
+[2024-06-13T21:08:55.982+0000] {processor.py:840} INFO - DAG(s) 'run_dbt' retrieved from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:08:55.989+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:08:55.989+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-13T21:08:55.992+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:08:55.992+0000] {dag.py:3954} INFO - Setting next_dagrun for run_dbt to None, run_after=None
+[2024-06-13T21:08:56.001+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/run_dbt.py took 3.659 seconds
+[2024-06-13T21:09:26.251+0000] {processor.py:161} INFO - Started process (PID=252) to work on /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:09:26.251+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/run_dbt.py for tasks to queue
+[2024-06-13T21:09:26.252+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:09:26.252+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:09:26.255+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:09:26.255+0000] {graph.py:242} INFO - Trying to parse the dbt project in `/opt/airflow/dbt_tp` using dbt ls...
+[2024-06-13T21:09:26.256+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:09:26.256+0000] {graph.py:252} INFO - Content of the dbt project dir /opt/airflow/dbt_tp: `['.user.yml', 'dependencies.yml', 'profiles.yml', 'snapshots', 'package-lock.yml', 'Dockerfile', 'tests', 'models', 'README.md', 'macros', '.dockerignore', '.gitignore', 'seeds', 'analyses', 'dbt_project.yml']`
+[2024-06-13T21:09:26.257+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:09:26.257+0000] {graph.py:262} INFO - Partial parse is enabled and the latest partial parse file is /tmp/cosmos/run_dbt__dbt_task_group/target/partial_parse.msgpack
+[2024-06-13T21:09:26.260+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:09:26.260+0000] {base.py:222} INFO - Using mock values for profile dbt_tp
+[2024-06-13T21:09:26.261+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:09:26.261+0000] {config.py:291} INFO - Creating temporary profiles.yml with use_mock_values=True at /tmp/tmprjn00gu4/profiles.yml with the following contents:
+dbt_tp:
+    outputs:
+        dev:
+            dbname: postgres
+            host: mock_value
+            password: mock_value
+            port: 5432
+            schema: public
+            type: postgres
+            user: mock_value
+    target: dev
+[2024-06-13T21:09:26.262+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:09:26.262+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt deps --project-dir /tmp/tmprj3if_rx --profiles-dir /tmp/tmprjn00gu4 --profile dbt_tp --target dev`
+[2024-06-13T21:09:28.398+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:09:28.398+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt ls --output json --project-dir /tmp/tmprj3if_rx --profiles-dir /tmp/tmprjn00gu4 --profile dbt_tp --target dev`
+[2024-06-13T21:09:29.884+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:09:29.884+0000] {graph.py:190} INFO - Total nodes: 6
+[2024-06-13T21:09:29.884+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:09:29.884+0000] {graph.py:191} INFO - Total filtered nodes: 6
+[2024-06-13T21:09:29.886+0000] {processor.py:840} INFO - DAG(s) 'run_dbt' retrieved from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:09:29.894+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:09:29.894+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-13T21:09:29.898+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:09:29.898+0000] {dag.py:3954} INFO - Setting next_dagrun for run_dbt to None, run_after=None
+[2024-06-13T21:09:29.905+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/run_dbt.py took 3.657 seconds
+[2024-06-13T21:10:00.034+0000] {processor.py:161} INFO - Started process (PID=269) to work on /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:10:00.036+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/run_dbt.py for tasks to queue
+[2024-06-13T21:10:00.039+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:10:00.039+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:10:00.050+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:10:00.050+0000] {graph.py:242} INFO - Trying to parse the dbt project in `/opt/airflow/dbt_tp` using dbt ls...
+[2024-06-13T21:10:00.052+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:10:00.052+0000] {graph.py:252} INFO - Content of the dbt project dir /opt/airflow/dbt_tp: `['.user.yml', 'dependencies.yml', 'profiles.yml', 'snapshots', 'package-lock.yml', 'Dockerfile', 'tests', 'models', 'README.md', 'macros', '.dockerignore', '.gitignore', 'seeds', 'analyses', 'dbt_project.yml']`
+[2024-06-13T21:10:00.054+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:10:00.053+0000] {graph.py:262} INFO - Partial parse is enabled and the latest partial parse file is /tmp/cosmos/run_dbt__dbt_task_group/target/partial_parse.msgpack
+[2024-06-13T21:10:00.061+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:10:00.061+0000] {base.py:222} INFO - Using mock values for profile dbt_tp
+[2024-06-13T21:10:00.062+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:10:00.062+0000] {config.py:291} INFO - Creating temporary profiles.yml with use_mock_values=True at /tmp/tmp6ocvi9xd/profiles.yml with the following contents:
+dbt_tp:
+    outputs:
+        dev:
+            dbname: postgres
+            host: mock_value
+            password: mock_value
+            port: 5432
+            schema: public
+            type: postgres
+            user: mock_value
+    target: dev
+[2024-06-13T21:10:00.063+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:10:00.063+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt deps --project-dir /tmp/tmp4o3sxutd --profiles-dir /tmp/tmp6ocvi9xd --profile dbt_tp --target dev`
+[2024-06-13T21:10:02.501+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:10:02.501+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt ls --output json --project-dir /tmp/tmp4o3sxutd --profiles-dir /tmp/tmp6ocvi9xd --profile dbt_tp --target dev`
+[2024-06-13T21:10:04.004+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:10:04.004+0000] {graph.py:190} INFO - Total nodes: 6
+[2024-06-13T21:10:04.004+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:10:04.004+0000] {graph.py:191} INFO - Total filtered nodes: 6
+[2024-06-13T21:10:04.006+0000] {processor.py:840} INFO - DAG(s) 'run_dbt' retrieved from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:10:04.014+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:10:04.014+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-13T21:10:04.018+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:10:04.018+0000] {dag.py:3954} INFO - Setting next_dagrun for run_dbt to None, run_after=None
+[2024-06-13T21:10:04.026+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/run_dbt.py took 3.999 seconds
+[2024-06-13T21:10:34.187+0000] {processor.py:161} INFO - Started process (PID=286) to work on /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:10:34.189+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/run_dbt.py for tasks to queue
+[2024-06-13T21:10:34.192+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:10:34.191+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:10:34.199+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:10:34.199+0000] {graph.py:242} INFO - Trying to parse the dbt project in `/opt/airflow/dbt_tp` using dbt ls...
+[2024-06-13T21:10:34.201+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:10:34.201+0000] {graph.py:252} INFO - Content of the dbt project dir /opt/airflow/dbt_tp: `['.user.yml', 'dependencies.yml', 'profiles.yml', 'snapshots', 'package-lock.yml', 'Dockerfile', 'tests', 'models', 'README.md', 'macros', '.dockerignore', '.gitignore', 'seeds', 'analyses', 'dbt_project.yml']`
+[2024-06-13T21:10:34.202+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:10:34.202+0000] {graph.py:262} INFO - Partial parse is enabled and the latest partial parse file is /tmp/cosmos/run_dbt__dbt_task_group/target/partial_parse.msgpack
+[2024-06-13T21:10:34.210+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:10:34.210+0000] {base.py:222} INFO - Using mock values for profile dbt_tp
+[2024-06-13T21:10:34.212+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:10:34.212+0000] {config.py:291} INFO - Creating temporary profiles.yml with use_mock_values=True at /tmp/tmpj7r5voxt/profiles.yml with the following contents:
+dbt_tp:
+    outputs:
+        dev:
+            dbname: postgres
+            host: mock_value
+            password: mock_value
+            port: 5432
+            schema: public
+            type: postgres
+            user: mock_value
+    target: dev
+[2024-06-13T21:10:34.213+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:10:34.213+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt deps --project-dir /tmp/tmpoivqu_t7 --profiles-dir /tmp/tmpj7r5voxt --profile dbt_tp --target dev`
+[2024-06-13T21:10:36.347+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:10:36.346+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt ls --output json --project-dir /tmp/tmpoivqu_t7 --profiles-dir /tmp/tmpj7r5voxt --profile dbt_tp --target dev`
+[2024-06-13T21:10:37.832+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:10:37.832+0000] {graph.py:190} INFO - Total nodes: 6
+[2024-06-13T21:10:37.832+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:10:37.832+0000] {graph.py:191} INFO - Total filtered nodes: 6
+[2024-06-13T21:10:37.834+0000] {processor.py:840} INFO - DAG(s) 'run_dbt' retrieved from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:10:37.842+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:10:37.842+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-13T21:10:37.846+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:10:37.846+0000] {dag.py:3954} INFO - Setting next_dagrun for run_dbt to None, run_after=None
+[2024-06-13T21:10:37.853+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/run_dbt.py took 3.673 seconds
+[2024-06-13T21:11:08.017+0000] {processor.py:161} INFO - Started process (PID=303) to work on /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:11:08.019+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/run_dbt.py for tasks to queue
+[2024-06-13T21:11:08.021+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:11:08.021+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:11:08.030+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:11:08.030+0000] {graph.py:242} INFO - Trying to parse the dbt project in `/opt/airflow/dbt_tp` using dbt ls...
+[2024-06-13T21:11:08.032+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:11:08.032+0000] {graph.py:252} INFO - Content of the dbt project dir /opt/airflow/dbt_tp: `['.user.yml', 'dependencies.yml', 'profiles.yml', 'snapshots', 'package-lock.yml', 'Dockerfile', 'tests', 'models', 'README.md', 'macros', '.dockerignore', '.gitignore', 'seeds', 'analyses', 'dbt_project.yml']`
+[2024-06-13T21:11:08.034+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:11:08.033+0000] {graph.py:262} INFO - Partial parse is enabled and the latest partial parse file is /tmp/cosmos/run_dbt__dbt_task_group/target/partial_parse.msgpack
+[2024-06-13T21:11:08.041+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:11:08.041+0000] {base.py:222} INFO - Using mock values for profile dbt_tp
+[2024-06-13T21:11:08.043+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:11:08.042+0000] {config.py:291} INFO - Creating temporary profiles.yml with use_mock_values=True at /tmp/tmpikszcbqx/profiles.yml with the following contents:
+dbt_tp:
+    outputs:
+        dev:
+            dbname: postgres
+            host: mock_value
+            password: mock_value
+            port: 5432
+            schema: public
+            type: postgres
+            user: mock_value
+    target: dev
+[2024-06-13T21:11:08.043+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:11:08.043+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt deps --project-dir /tmp/tmpu0ujzsws --profiles-dir /tmp/tmpikszcbqx --profile dbt_tp --target dev`
+[2024-06-13T21:11:10.222+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:11:10.222+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt ls --output json --project-dir /tmp/tmpu0ujzsws --profiles-dir /tmp/tmpikszcbqx --profile dbt_tp --target dev`
+[2024-06-13T21:11:11.653+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:11:11.653+0000] {graph.py:190} INFO - Total nodes: 6
+[2024-06-13T21:11:11.654+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:11:11.654+0000] {graph.py:191} INFO - Total filtered nodes: 6
+[2024-06-13T21:11:11.655+0000] {processor.py:840} INFO - DAG(s) 'run_dbt' retrieved from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:11:11.664+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:11:11.663+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-13T21:11:11.667+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:11:11.667+0000] {dag.py:3954} INFO - Setting next_dagrun for run_dbt to None, run_after=None
+[2024-06-13T21:11:11.675+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/run_dbt.py took 3.665 seconds
+[2024-06-13T21:11:41.775+0000] {processor.py:161} INFO - Started process (PID=320) to work on /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:11:41.776+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/run_dbt.py for tasks to queue
+[2024-06-13T21:11:41.778+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:11:41.777+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:11:41.785+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:11:41.785+0000] {graph.py:242} INFO - Trying to parse the dbt project in `/opt/airflow/dbt_tp` using dbt ls...
+[2024-06-13T21:11:41.787+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:11:41.787+0000] {graph.py:252} INFO - Content of the dbt project dir /opt/airflow/dbt_tp: `['.user.yml', 'dependencies.yml', 'profiles.yml', 'snapshots', 'package-lock.yml', 'Dockerfile', 'tests', 'models', 'README.md', 'macros', '.dockerignore', '.gitignore', 'seeds', 'analyses', 'dbt_project.yml']`
+[2024-06-13T21:11:41.788+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:11:41.788+0000] {graph.py:262} INFO - Partial parse is enabled and the latest partial parse file is /tmp/cosmos/run_dbt__dbt_task_group/target/partial_parse.msgpack
+[2024-06-13T21:11:41.796+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:11:41.796+0000] {base.py:222} INFO - Using mock values for profile dbt_tp
+[2024-06-13T21:11:41.797+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:11:41.797+0000] {config.py:291} INFO - Creating temporary profiles.yml with use_mock_values=True at /tmp/tmpi7yq3q7k/profiles.yml with the following contents:
+dbt_tp:
+    outputs:
+        dev:
+            dbname: postgres
+            host: mock_value
+            password: mock_value
+            port: 5432
+            schema: public
+            type: postgres
+            user: mock_value
+    target: dev
+[2024-06-13T21:11:41.798+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:11:41.797+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt deps --project-dir /tmp/tmpgg0ofmp5 --profiles-dir /tmp/tmpi7yq3q7k --profile dbt_tp --target dev`
+[2024-06-13T21:11:43.806+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:11:43.805+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt ls --output json --project-dir /tmp/tmpgg0ofmp5 --profiles-dir /tmp/tmpi7yq3q7k --profile dbt_tp --target dev`
+[2024-06-13T21:11:45.229+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:11:45.229+0000] {graph.py:190} INFO - Total nodes: 6
+[2024-06-13T21:11:45.229+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:11:45.229+0000] {graph.py:191} INFO - Total filtered nodes: 6
+[2024-06-13T21:11:45.231+0000] {processor.py:840} INFO - DAG(s) 'run_dbt' retrieved from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:11:45.240+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:11:45.239+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-13T21:11:45.243+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:11:45.243+0000] {dag.py:3954} INFO - Setting next_dagrun for run_dbt to None, run_after=None
+[2024-06-13T21:11:45.252+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/run_dbt.py took 3.483 seconds
+[2024-06-13T21:12:15.438+0000] {processor.py:161} INFO - Started process (PID=337) to work on /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:12:15.440+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/run_dbt.py for tasks to queue
+[2024-06-13T21:12:15.443+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:12:15.442+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:12:15.452+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:12:15.451+0000] {graph.py:242} INFO - Trying to parse the dbt project in `/opt/airflow/dbt_tp` using dbt ls...
+[2024-06-13T21:12:15.454+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:12:15.453+0000] {graph.py:252} INFO - Content of the dbt project dir /opt/airflow/dbt_tp: `['.user.yml', 'dependencies.yml', 'profiles.yml', 'snapshots', 'package-lock.yml', 'Dockerfile', 'tests', 'models', 'README.md', 'macros', '.dockerignore', '.gitignore', 'seeds', 'analyses', 'dbt_project.yml']`
+[2024-06-13T21:12:15.455+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:12:15.455+0000] {graph.py:262} INFO - Partial parse is enabled and the latest partial parse file is /tmp/cosmos/run_dbt__dbt_task_group/target/partial_parse.msgpack
+[2024-06-13T21:12:15.464+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:12:15.463+0000] {base.py:222} INFO - Using mock values for profile dbt_tp
+[2024-06-13T21:12:15.465+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:12:15.465+0000] {config.py:291} INFO - Creating temporary profiles.yml with use_mock_values=True at /tmp/tmpasy526_n/profiles.yml with the following contents:
+dbt_tp:
+    outputs:
+        dev:
+            dbname: postgres
+            host: mock_value
+            password: mock_value
+            port: 5432
+            schema: public
+            type: postgres
+            user: mock_value
+    target: dev
+[2024-06-13T21:12:15.466+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:12:15.465+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt deps --project-dir /tmp/tmpz72chjf5 --profiles-dir /tmp/tmpasy526_n --profile dbt_tp --target dev`
+[2024-06-13T21:12:17.556+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:12:17.556+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt ls --output json --project-dir /tmp/tmpz72chjf5 --profiles-dir /tmp/tmpasy526_n --profile dbt_tp --target dev`
+[2024-06-13T21:12:19.074+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:12:19.073+0000] {graph.py:190} INFO - Total nodes: 6
+[2024-06-13T21:12:19.074+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:12:19.074+0000] {graph.py:191} INFO - Total filtered nodes: 6
+[2024-06-13T21:12:19.076+0000] {processor.py:840} INFO - DAG(s) 'run_dbt' retrieved from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:12:19.085+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:12:19.085+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-13T21:12:19.089+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:12:19.089+0000] {dag.py:3954} INFO - Setting next_dagrun for run_dbt to None, run_after=None
+[2024-06-13T21:12:19.097+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/run_dbt.py took 3.665 seconds
+[2024-06-13T21:12:49.233+0000] {processor.py:161} INFO - Started process (PID=354) to work on /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:12:49.234+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/run_dbt.py for tasks to queue
+[2024-06-13T21:12:49.237+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:12:49.237+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:12:49.247+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:12:49.246+0000] {graph.py:242} INFO - Trying to parse the dbt project in `/opt/airflow/dbt_tp` using dbt ls...
+[2024-06-13T21:12:49.248+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:12:49.248+0000] {graph.py:252} INFO - Content of the dbt project dir /opt/airflow/dbt_tp: `['.user.yml', 'dependencies.yml', 'profiles.yml', 'snapshots', 'package-lock.yml', 'Dockerfile', 'tests', 'models', 'README.md', 'macros', '.dockerignore', '.gitignore', 'seeds', 'analyses', 'dbt_project.yml']`
+[2024-06-13T21:12:49.250+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:12:49.250+0000] {graph.py:262} INFO - Partial parse is enabled and the latest partial parse file is /tmp/cosmos/run_dbt__dbt_task_group/target/partial_parse.msgpack
+[2024-06-13T21:12:49.258+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:12:49.258+0000] {base.py:222} INFO - Using mock values for profile dbt_tp
+[2024-06-13T21:12:49.259+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:12:49.259+0000] {config.py:291} INFO - Creating temporary profiles.yml with use_mock_values=True at /tmp/tmpnz5i4kt1/profiles.yml with the following contents:
+dbt_tp:
+    outputs:
+        dev:
+            dbname: postgres
+            host: mock_value
+            password: mock_value
+            port: 5432
+            schema: public
+            type: postgres
+            user: mock_value
+    target: dev
+[2024-06-13T21:12:49.260+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:12:49.260+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt deps --project-dir /tmp/tmpzrzx7q6i --profiles-dir /tmp/tmpnz5i4kt1 --profile dbt_tp --target dev`
+[2024-06-13T21:12:51.452+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:12:51.452+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt ls --output json --project-dir /tmp/tmpzrzx7q6i --profiles-dir /tmp/tmpnz5i4kt1 --profile dbt_tp --target dev`
+[2024-06-13T21:12:52.930+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:12:52.930+0000] {graph.py:190} INFO - Total nodes: 6
+[2024-06-13T21:12:52.930+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:12:52.930+0000] {graph.py:191} INFO - Total filtered nodes: 6
+[2024-06-13T21:12:52.932+0000] {processor.py:840} INFO - DAG(s) 'run_dbt' retrieved from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:12:52.940+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:12:52.940+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-13T21:12:52.943+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:12:52.943+0000] {dag.py:3954} INFO - Setting next_dagrun for run_dbt to None, run_after=None
+[2024-06-13T21:12:52.952+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/run_dbt.py took 3.726 seconds
+[2024-06-13T21:13:23.113+0000] {processor.py:161} INFO - Started process (PID=371) to work on /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:13:23.115+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/run_dbt.py for tasks to queue
+[2024-06-13T21:13:23.117+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:13:23.117+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:13:23.125+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:13:23.125+0000] {graph.py:242} INFO - Trying to parse the dbt project in `/opt/airflow/dbt_tp` using dbt ls...
+[2024-06-13T21:13:23.127+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:13:23.127+0000] {graph.py:252} INFO - Content of the dbt project dir /opt/airflow/dbt_tp: `['.user.yml', 'dependencies.yml', 'profiles.yml', 'snapshots', 'package-lock.yml', 'Dockerfile', 'tests', 'models', 'README.md', 'macros', '.dockerignore', '.gitignore', 'seeds', 'analyses', 'dbt_project.yml']`
+[2024-06-13T21:13:23.129+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:13:23.128+0000] {graph.py:262} INFO - Partial parse is enabled and the latest partial parse file is /tmp/cosmos/run_dbt__dbt_task_group/target/partial_parse.msgpack
+[2024-06-13T21:13:23.136+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:13:23.136+0000] {base.py:222} INFO - Using mock values for profile dbt_tp
+[2024-06-13T21:13:23.137+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:13:23.137+0000] {config.py:291} INFO - Creating temporary profiles.yml with use_mock_values=True at /tmp/tmptshy1cst/profiles.yml with the following contents:
+dbt_tp:
+    outputs:
+        dev:
+            dbname: postgres
+            host: mock_value
+            password: mock_value
+            port: 5432
+            schema: public
+            type: postgres
+            user: mock_value
+    target: dev
+[2024-06-13T21:13:23.138+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:13:23.138+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt deps --project-dir /tmp/tmp_3kiy0bk --profiles-dir /tmp/tmptshy1cst --profile dbt_tp --target dev`
+[2024-06-13T21:13:25.473+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:13:25.472+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt ls --output json --project-dir /tmp/tmp_3kiy0bk --profiles-dir /tmp/tmptshy1cst --profile dbt_tp --target dev`
+[2024-06-13T21:13:26.932+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:13:26.932+0000] {graph.py:190} INFO - Total nodes: 6
+[2024-06-13T21:13:26.933+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:13:26.933+0000] {graph.py:191} INFO - Total filtered nodes: 6
+[2024-06-13T21:13:26.934+0000] {processor.py:840} INFO - DAG(s) 'run_dbt' retrieved from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:13:26.944+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:13:26.943+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-13T21:13:26.947+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:13:26.947+0000] {dag.py:3954} INFO - Setting next_dagrun for run_dbt to None, run_after=None
+[2024-06-13T21:13:26.956+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/run_dbt.py took 3.849 seconds
+[2024-06-13T21:13:57.127+0000] {processor.py:161} INFO - Started process (PID=388) to work on /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:13:57.129+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/run_dbt.py for tasks to queue
+[2024-06-13T21:13:57.131+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:13:57.130+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:13:57.139+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:13:57.139+0000] {graph.py:242} INFO - Trying to parse the dbt project in `/opt/airflow/dbt_tp` using dbt ls...
+[2024-06-13T21:13:57.141+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:13:57.141+0000] {graph.py:252} INFO - Content of the dbt project dir /opt/airflow/dbt_tp: `['.user.yml', 'dependencies.yml', 'profiles.yml', 'snapshots', 'package-lock.yml', 'Dockerfile', 'tests', 'models', 'README.md', 'macros', '.dockerignore', '.gitignore', 'seeds', 'analyses', 'dbt_project.yml']`
+[2024-06-13T21:13:57.143+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:13:57.142+0000] {graph.py:262} INFO - Partial parse is enabled and the latest partial parse file is /tmp/cosmos/run_dbt__dbt_task_group/target/partial_parse.msgpack
+[2024-06-13T21:13:57.150+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:13:57.150+0000] {base.py:222} INFO - Using mock values for profile dbt_tp
+[2024-06-13T21:13:57.151+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:13:57.151+0000] {config.py:291} INFO - Creating temporary profiles.yml with use_mock_values=True at /tmp/tmp8o6ugxcu/profiles.yml with the following contents:
+dbt_tp:
+    outputs:
+        dev:
+            dbname: postgres
+            host: mock_value
+            password: mock_value
+            port: 5432
+            schema: public
+            type: postgres
+            user: mock_value
+    target: dev
+[2024-06-13T21:13:57.152+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:13:57.152+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt deps --project-dir /tmp/tmp6wh3yhaz --profiles-dir /tmp/tmp8o6ugxcu --profile dbt_tp --target dev`
+[2024-06-13T21:13:59.242+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:13:59.242+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt ls --output json --project-dir /tmp/tmp6wh3yhaz --profiles-dir /tmp/tmp8o6ugxcu --profile dbt_tp --target dev`
+[2024-06-13T21:14:00.683+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:14:00.683+0000] {graph.py:190} INFO - Total nodes: 6
+[2024-06-13T21:14:00.684+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:14:00.684+0000] {graph.py:191} INFO - Total filtered nodes: 6
+[2024-06-13T21:14:00.685+0000] {processor.py:840} INFO - DAG(s) 'run_dbt' retrieved from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:14:00.693+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:14:00.693+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-13T21:14:00.697+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:14:00.697+0000] {dag.py:3954} INFO - Setting next_dagrun for run_dbt to None, run_after=None
+[2024-06-13T21:14:00.705+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/run_dbt.py took 3.585 seconds
+[2024-06-13T21:14:30.790+0000] {processor.py:161} INFO - Started process (PID=405) to work on /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:14:30.791+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/run_dbt.py for tasks to queue
+[2024-06-13T21:14:30.792+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:14:30.792+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:14:30.797+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:14:30.797+0000] {graph.py:242} INFO - Trying to parse the dbt project in `/opt/airflow/dbt_tp` using dbt ls...
+[2024-06-13T21:14:30.798+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:14:30.798+0000] {graph.py:252} INFO - Content of the dbt project dir /opt/airflow/dbt_tp: `['.user.yml', 'dependencies.yml', 'profiles.yml', 'snapshots', 'package-lock.yml', 'Dockerfile', 'tests', 'models', 'README.md', 'macros', '.dockerignore', '.gitignore', 'seeds', 'analyses', 'dbt_project.yml']`
+[2024-06-13T21:14:30.799+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:14:30.799+0000] {graph.py:262} INFO - Partial parse is enabled and the latest partial parse file is /tmp/cosmos/run_dbt__dbt_task_group/target/partial_parse.msgpack
+[2024-06-13T21:14:30.804+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:14:30.804+0000] {base.py:222} INFO - Using mock values for profile dbt_tp
+[2024-06-13T21:14:30.805+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:14:30.805+0000] {config.py:291} INFO - Creating temporary profiles.yml with use_mock_values=True at /tmp/tmplilx92hr/profiles.yml with the following contents:
+dbt_tp:
+    outputs:
+        dev:
+            dbname: postgres
+            host: mock_value
+            password: mock_value
+            port: 5432
+            schema: public
+            type: postgres
+            user: mock_value
+    target: dev
+[2024-06-13T21:14:30.806+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:14:30.806+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt deps --project-dir /tmp/tmpjzatipel --profiles-dir /tmp/tmplilx92hr --profile dbt_tp --target dev`
+[2024-06-13T21:14:33.349+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:14:33.349+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt ls --output json --project-dir /tmp/tmpjzatipel --profiles-dir /tmp/tmplilx92hr --profile dbt_tp --target dev`
+[2024-06-13T21:14:34.792+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:14:34.792+0000] {graph.py:190} INFO - Total nodes: 6
+[2024-06-13T21:14:34.793+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:14:34.792+0000] {graph.py:191} INFO - Total filtered nodes: 6
+[2024-06-13T21:14:34.794+0000] {processor.py:840} INFO - DAG(s) 'run_dbt' retrieved from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:14:34.803+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:14:34.803+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-13T21:14:34.807+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:14:34.807+0000] {dag.py:3954} INFO - Setting next_dagrun for run_dbt to None, run_after=None
+[2024-06-13T21:14:34.816+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/run_dbt.py took 4.029 seconds
+[2024-06-13T21:15:04.964+0000] {processor.py:161} INFO - Started process (PID=422) to work on /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:15:04.965+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/run_dbt.py for tasks to queue
+[2024-06-13T21:15:04.966+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:15:04.966+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:15:04.972+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:15:04.971+0000] {graph.py:242} INFO - Trying to parse the dbt project in `/opt/airflow/dbt_tp` using dbt ls...
+[2024-06-13T21:15:04.973+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:15:04.973+0000] {graph.py:252} INFO - Content of the dbt project dir /opt/airflow/dbt_tp: `['.user.yml', 'dependencies.yml', 'profiles.yml', 'snapshots', 'package-lock.yml', 'Dockerfile', 'tests', 'models', 'README.md', 'macros', '.dockerignore', '.gitignore', 'seeds', 'analyses', 'dbt_project.yml']`
+[2024-06-13T21:15:04.974+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:15:04.974+0000] {graph.py:262} INFO - Partial parse is enabled and the latest partial parse file is /tmp/cosmos/run_dbt__dbt_task_group/target/partial_parse.msgpack
+[2024-06-13T21:15:04.980+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:15:04.980+0000] {base.py:222} INFO - Using mock values for profile dbt_tp
+[2024-06-13T21:15:04.981+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:15:04.981+0000] {config.py:291} INFO - Creating temporary profiles.yml with use_mock_values=True at /tmp/tmp5z2nk6kp/profiles.yml with the following contents:
+dbt_tp:
+    outputs:
+        dev:
+            dbname: postgres
+            host: mock_value
+            password: mock_value
+            port: 5432
+            schema: public
+            type: postgres
+            user: mock_value
+    target: dev
+[2024-06-13T21:15:04.981+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:15:04.981+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt deps --project-dir /tmp/tmp1n27teg4 --profiles-dir /tmp/tmp5z2nk6kp --profile dbt_tp --target dev`
+[2024-06-13T21:15:07.170+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:15:07.170+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt ls --output json --project-dir /tmp/tmp1n27teg4 --profiles-dir /tmp/tmp5z2nk6kp --profile dbt_tp --target dev`
+[2024-06-13T21:15:08.617+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:15:08.617+0000] {graph.py:190} INFO - Total nodes: 6
+[2024-06-13T21:15:08.618+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:15:08.618+0000] {graph.py:191} INFO - Total filtered nodes: 6
+[2024-06-13T21:15:08.619+0000] {processor.py:840} INFO - DAG(s) 'run_dbt' retrieved from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:15:08.627+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:15:08.627+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-13T21:15:08.631+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:15:08.631+0000] {dag.py:3954} INFO - Setting next_dagrun for run_dbt to None, run_after=None
+[2024-06-13T21:15:08.639+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/run_dbt.py took 3.679 seconds
+[2024-06-13T21:15:38.833+0000] {processor.py:161} INFO - Started process (PID=439) to work on /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:15:38.835+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/run_dbt.py for tasks to queue
+[2024-06-13T21:15:38.837+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:15:38.837+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:15:38.846+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:15:38.846+0000] {graph.py:242} INFO - Trying to parse the dbt project in `/opt/airflow/dbt_tp` using dbt ls...
+[2024-06-13T21:15:38.848+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:15:38.848+0000] {graph.py:252} INFO - Content of the dbt project dir /opt/airflow/dbt_tp: `['.user.yml', 'dependencies.yml', 'profiles.yml', 'snapshots', 'package-lock.yml', 'Dockerfile', 'tests', 'models', 'README.md', 'macros', '.dockerignore', '.gitignore', 'seeds', 'analyses', 'dbt_project.yml']`
+[2024-06-13T21:15:38.850+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:15:38.850+0000] {graph.py:262} INFO - Partial parse is enabled and the latest partial parse file is /tmp/cosmos/run_dbt__dbt_task_group/target/partial_parse.msgpack
+[2024-06-13T21:15:38.858+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:15:38.858+0000] {base.py:222} INFO - Using mock values for profile dbt_tp
+[2024-06-13T21:15:38.860+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:15:38.859+0000] {config.py:291} INFO - Creating temporary profiles.yml with use_mock_values=True at /tmp/tmpkiuma6he/profiles.yml with the following contents:
+dbt_tp:
+    outputs:
+        dev:
+            dbname: postgres
+            host: mock_value
+            password: mock_value
+            port: 5432
+            schema: public
+            type: postgres
+            user: mock_value
+    target: dev
+[2024-06-13T21:15:38.860+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:15:38.860+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt deps --project-dir /tmp/tmpsn872qtk --profiles-dir /tmp/tmpkiuma6he --profile dbt_tp --target dev`
+[2024-06-13T21:15:40.860+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:15:40.860+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt ls --output json --project-dir /tmp/tmpsn872qtk --profiles-dir /tmp/tmpkiuma6he --profile dbt_tp --target dev`
+[2024-06-13T21:15:42.603+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:15:42.603+0000] {graph.py:190} INFO - Total nodes: 6
+[2024-06-13T21:15:42.604+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:15:42.603+0000] {graph.py:191} INFO - Total filtered nodes: 6
+[2024-06-13T21:15:42.605+0000] {processor.py:840} INFO - DAG(s) 'run_dbt' retrieved from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:15:42.614+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:15:42.613+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-13T21:15:42.617+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:15:42.617+0000] {dag.py:3954} INFO - Setting next_dagrun for run_dbt to None, run_after=None
+[2024-06-13T21:15:42.625+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/run_dbt.py took 3.798 seconds
+[2024-06-13T21:16:12.775+0000] {processor.py:161} INFO - Started process (PID=456) to work on /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:16:12.776+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/run_dbt.py for tasks to queue
+[2024-06-13T21:16:12.777+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:16:12.777+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:16:12.783+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:16:12.783+0000] {graph.py:242} INFO - Trying to parse the dbt project in `/opt/airflow/dbt_tp` using dbt ls...
+[2024-06-13T21:16:12.785+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:16:12.785+0000] {graph.py:252} INFO - Content of the dbt project dir /opt/airflow/dbt_tp: `['.user.yml', 'dependencies.yml', 'profiles.yml', 'snapshots', 'package-lock.yml', 'Dockerfile', 'tests', 'models', 'README.md', 'macros', '.dockerignore', '.gitignore', 'seeds', 'analyses', 'dbt_project.yml']`
+[2024-06-13T21:16:12.786+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:16:12.786+0000] {graph.py:262} INFO - Partial parse is enabled and the latest partial parse file is /tmp/cosmos/run_dbt__dbt_task_group/target/partial_parse.msgpack
+[2024-06-13T21:16:12.793+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:16:12.792+0000] {base.py:222} INFO - Using mock values for profile dbt_tp
+[2024-06-13T21:16:12.794+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:16:12.793+0000] {config.py:291} INFO - Creating temporary profiles.yml with use_mock_values=True at /tmp/tmpdawd03kn/profiles.yml with the following contents:
+dbt_tp:
+    outputs:
+        dev:
+            dbname: postgres
+            host: mock_value
+            password: mock_value
+            port: 5432
+            schema: public
+            type: postgres
+            user: mock_value
+    target: dev
+[2024-06-13T21:16:12.794+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:16:12.794+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt deps --project-dir /tmp/tmp6c8awefe --profiles-dir /tmp/tmpdawd03kn --profile dbt_tp --target dev`
+[2024-06-13T21:16:14.992+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:16:14.992+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt ls --output json --project-dir /tmp/tmp6c8awefe --profiles-dir /tmp/tmpdawd03kn --profile dbt_tp --target dev`
+[2024-06-13T21:16:16.614+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:16:16.613+0000] {graph.py:190} INFO - Total nodes: 6
+[2024-06-13T21:16:16.614+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:16:16.614+0000] {graph.py:191} INFO - Total filtered nodes: 6
+[2024-06-13T21:16:16.616+0000] {processor.py:840} INFO - DAG(s) 'run_dbt' retrieved from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:16:16.624+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:16:16.624+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-13T21:16:16.628+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:16:16.628+0000] {dag.py:3954} INFO - Setting next_dagrun for run_dbt to None, run_after=None
+[2024-06-13T21:16:16.636+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/run_dbt.py took 3.866 seconds
+[2024-06-13T21:16:46.770+0000] {processor.py:161} INFO - Started process (PID=473) to work on /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:16:46.771+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/run_dbt.py for tasks to queue
+[2024-06-13T21:16:46.774+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:16:46.774+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:16:46.783+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:16:46.783+0000] {graph.py:242} INFO - Trying to parse the dbt project in `/opt/airflow/dbt_tp` using dbt ls...
+[2024-06-13T21:16:46.785+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:16:46.785+0000] {graph.py:252} INFO - Content of the dbt project dir /opt/airflow/dbt_tp: `['.user.yml', 'dependencies.yml', 'profiles.yml', 'snapshots', 'package-lock.yml', 'Dockerfile', 'tests', 'models', 'README.md', 'macros', '.dockerignore', '.gitignore', 'seeds', 'analyses', 'dbt_project.yml']`
+[2024-06-13T21:16:46.787+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:16:46.786+0000] {graph.py:262} INFO - Partial parse is enabled and the latest partial parse file is /tmp/cosmos/run_dbt__dbt_task_group/target/partial_parse.msgpack
+[2024-06-13T21:16:46.795+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:16:46.795+0000] {base.py:222} INFO - Using mock values for profile dbt_tp
+[2024-06-13T21:16:46.796+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:16:46.796+0000] {config.py:291} INFO - Creating temporary profiles.yml with use_mock_values=True at /tmp/tmpqd_hv4vb/profiles.yml with the following contents:
+dbt_tp:
+    outputs:
+        dev:
+            dbname: postgres
+            host: mock_value
+            password: mock_value
+            port: 5432
+            schema: public
+            type: postgres
+            user: mock_value
+    target: dev
+[2024-06-13T21:16:46.797+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:16:46.797+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt deps --project-dir /tmp/tmp46w2v0dm --profiles-dir /tmp/tmpqd_hv4vb --profile dbt_tp --target dev`
+[2024-06-13T21:16:48.944+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:16:48.944+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt ls --output json --project-dir /tmp/tmp46w2v0dm --profiles-dir /tmp/tmpqd_hv4vb --profile dbt_tp --target dev`
+[2024-06-13T21:16:50.562+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:16:50.562+0000] {graph.py:190} INFO - Total nodes: 6
+[2024-06-13T21:16:50.563+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:16:50.563+0000] {graph.py:191} INFO - Total filtered nodes: 6
+[2024-06-13T21:16:50.564+0000] {processor.py:840} INFO - DAG(s) 'run_dbt' retrieved from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:16:50.573+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:16:50.573+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-13T21:16:50.577+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:16:50.577+0000] {dag.py:3954} INFO - Setting next_dagrun for run_dbt to None, run_after=None
+[2024-06-13T21:16:50.585+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/run_dbt.py took 3.823 seconds
+[2024-06-13T21:17:20.761+0000] {processor.py:161} INFO - Started process (PID=490) to work on /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:17:20.763+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/run_dbt.py for tasks to queue
+[2024-06-13T21:17:20.765+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:17:20.765+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:17:20.774+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:17:20.773+0000] {graph.py:242} INFO - Trying to parse the dbt project in `/opt/airflow/dbt_tp` using dbt ls...
+[2024-06-13T21:17:20.776+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:17:20.776+0000] {graph.py:252} INFO - Content of the dbt project dir /opt/airflow/dbt_tp: `['.user.yml', 'dependencies.yml', 'profiles.yml', 'snapshots', 'package-lock.yml', 'Dockerfile', 'tests', 'models', 'README.md', 'macros', '.dockerignore', '.gitignore', 'seeds', 'analyses', 'dbt_project.yml']`
+[2024-06-13T21:17:20.777+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:17:20.777+0000] {graph.py:262} INFO - Partial parse is enabled and the latest partial parse file is /tmp/cosmos/run_dbt__dbt_task_group/target/partial_parse.msgpack
+[2024-06-13T21:17:20.785+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:17:20.784+0000] {base.py:222} INFO - Using mock values for profile dbt_tp
+[2024-06-13T21:17:20.786+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:17:20.786+0000] {config.py:291} INFO - Creating temporary profiles.yml with use_mock_values=True at /tmp/tmpqfx2re5r/profiles.yml with the following contents:
+dbt_tp:
+    outputs:
+        dev:
+            dbname: postgres
+            host: mock_value
+            password: mock_value
+            port: 5432
+            schema: public
+            type: postgres
+            user: mock_value
+    target: dev
+[2024-06-13T21:17:20.787+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:17:20.787+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt deps --project-dir /tmp/tmpk53n775z --profiles-dir /tmp/tmpqfx2re5r --profile dbt_tp --target dev`
+[2024-06-13T21:17:23.003+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:17:23.003+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt ls --output json --project-dir /tmp/tmpk53n775z --profiles-dir /tmp/tmpqfx2re5r --profile dbt_tp --target dev`
+[2024-06-13T21:17:24.515+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:17:24.515+0000] {graph.py:190} INFO - Total nodes: 6
+[2024-06-13T21:17:24.515+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:17:24.515+0000] {graph.py:191} INFO - Total filtered nodes: 6
+[2024-06-13T21:17:24.517+0000] {processor.py:840} INFO - DAG(s) 'run_dbt' retrieved from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:17:24.525+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:17:24.525+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-13T21:17:24.528+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:17:24.528+0000] {dag.py:3954} INFO - Setting next_dagrun for run_dbt to None, run_after=None
+[2024-06-13T21:17:24.536+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/run_dbt.py took 3.784 seconds
+[2024-06-13T21:17:54.656+0000] {processor.py:161} INFO - Started process (PID=507) to work on /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:17:54.658+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/run_dbt.py for tasks to queue
+[2024-06-13T21:17:54.660+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:17:54.660+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:17:54.669+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:17:54.669+0000] {graph.py:242} INFO - Trying to parse the dbt project in `/opt/airflow/dbt_tp` using dbt ls...
+[2024-06-13T21:17:54.671+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:17:54.671+0000] {graph.py:252} INFO - Content of the dbt project dir /opt/airflow/dbt_tp: `['.user.yml', 'dependencies.yml', 'profiles.yml', 'snapshots', 'package-lock.yml', 'Dockerfile', 'tests', 'models', 'README.md', 'macros', '.dockerignore', '.gitignore', 'seeds', 'analyses', 'dbt_project.yml']`
+[2024-06-13T21:17:54.673+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:17:54.673+0000] {graph.py:262} INFO - Partial parse is enabled and the latest partial parse file is /tmp/cosmos/run_dbt__dbt_task_group/target/partial_parse.msgpack
+[2024-06-13T21:17:54.681+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:17:54.681+0000] {base.py:222} INFO - Using mock values for profile dbt_tp
+[2024-06-13T21:17:54.683+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:17:54.682+0000] {config.py:291} INFO - Creating temporary profiles.yml with use_mock_values=True at /tmp/tmp_8vw9t1w/profiles.yml with the following contents:
+dbt_tp:
+    outputs:
+        dev:
+            dbname: postgres
+            host: mock_value
+            password: mock_value
+            port: 5432
+            schema: public
+            type: postgres
+            user: mock_value
+    target: dev
+[2024-06-13T21:17:54.683+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:17:54.683+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt deps --project-dir /tmp/tmpwn_91it_ --profiles-dir /tmp/tmp_8vw9t1w --profile dbt_tp --target dev`
+[2024-06-13T21:17:57.240+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:17:57.240+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt ls --output json --project-dir /tmp/tmpwn_91it_ --profiles-dir /tmp/tmp_8vw9t1w --profile dbt_tp --target dev`
+[2024-06-13T21:17:58.713+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:17:58.712+0000] {graph.py:190} INFO - Total nodes: 6
+[2024-06-13T21:17:58.713+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:17:58.713+0000] {graph.py:191} INFO - Total filtered nodes: 6
+[2024-06-13T21:17:58.715+0000] {processor.py:840} INFO - DAG(s) 'run_dbt' retrieved from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:17:58.724+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:17:58.724+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-13T21:17:58.728+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:17:58.728+0000] {dag.py:3954} INFO - Setting next_dagrun for run_dbt to None, run_after=None
+[2024-06-13T21:17:58.737+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/run_dbt.py took 4.088 seconds
+[2024-06-13T21:18:28.913+0000] {processor.py:161} INFO - Started process (PID=524) to work on /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:18:28.914+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/run_dbt.py for tasks to queue
+[2024-06-13T21:18:28.917+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:18:28.916+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:18:28.926+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:18:28.925+0000] {graph.py:242} INFO - Trying to parse the dbt project in `/opt/airflow/dbt_tp` using dbt ls...
+[2024-06-13T21:18:28.928+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:18:28.927+0000] {graph.py:252} INFO - Content of the dbt project dir /opt/airflow/dbt_tp: `['.user.yml', 'dependencies.yml', 'profiles.yml', 'snapshots', 'package-lock.yml', 'Dockerfile', 'tests', 'models', 'README.md', 'macros', '.dockerignore', '.gitignore', 'seeds', 'analyses', 'dbt_project.yml']`
+[2024-06-13T21:18:28.929+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:18:28.929+0000] {graph.py:262} INFO - Partial parse is enabled and the latest partial parse file is /tmp/cosmos/run_dbt__dbt_task_group/target/partial_parse.msgpack
+[2024-06-13T21:18:28.936+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:18:28.936+0000] {base.py:222} INFO - Using mock values for profile dbt_tp
+[2024-06-13T21:18:28.938+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:18:28.937+0000] {config.py:291} INFO - Creating temporary profiles.yml with use_mock_values=True at /tmp/tmpizts0o6j/profiles.yml with the following contents:
+dbt_tp:
+    outputs:
+        dev:
+            dbname: postgres
+            host: mock_value
+            password: mock_value
+            port: 5432
+            schema: public
+            type: postgres
+            user: mock_value
+    target: dev
+[2024-06-13T21:18:28.938+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:18:28.938+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt deps --project-dir /tmp/tmpbqodc3nn --profiles-dir /tmp/tmpizts0o6j --profile dbt_tp --target dev`
+[2024-06-13T21:18:31.035+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:18:31.035+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt ls --output json --project-dir /tmp/tmpbqodc3nn --profiles-dir /tmp/tmpizts0o6j --profile dbt_tp --target dev`
+[2024-06-13T21:18:32.541+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:18:32.540+0000] {graph.py:190} INFO - Total nodes: 6
+[2024-06-13T21:18:32.541+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:18:32.541+0000] {graph.py:191} INFO - Total filtered nodes: 6
+[2024-06-13T21:18:32.543+0000] {processor.py:840} INFO - DAG(s) 'run_dbt' retrieved from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:18:32.553+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:18:32.553+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-13T21:18:32.558+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:18:32.557+0000] {dag.py:3954} INFO - Setting next_dagrun for run_dbt to None, run_after=None
+[2024-06-13T21:18:32.566+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/run_dbt.py took 3.660 seconds
+[2024-06-13T21:19:02.690+0000] {processor.py:161} INFO - Started process (PID=541) to work on /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:19:02.690+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/run_dbt.py for tasks to queue
+[2024-06-13T21:19:02.691+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:19:02.691+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:19:02.694+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:19:02.694+0000] {graph.py:242} INFO - Trying to parse the dbt project in `/opt/airflow/dbt_tp` using dbt ls...
+[2024-06-13T21:19:02.695+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:19:02.695+0000] {graph.py:252} INFO - Content of the dbt project dir /opt/airflow/dbt_tp: `['.user.yml', 'dependencies.yml', 'profiles.yml', 'snapshots', 'package-lock.yml', 'Dockerfile', 'tests', 'models', 'README.md', 'macros', '.dockerignore', '.gitignore', 'seeds', 'analyses', 'dbt_project.yml']`
+[2024-06-13T21:19:02.696+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:19:02.696+0000] {graph.py:262} INFO - Partial parse is enabled and the latest partial parse file is /tmp/cosmos/run_dbt__dbt_task_group/target/partial_parse.msgpack
+[2024-06-13T21:19:02.699+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:19:02.699+0000] {base.py:222} INFO - Using mock values for profile dbt_tp
+[2024-06-13T21:19:02.700+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:19:02.700+0000] {config.py:291} INFO - Creating temporary profiles.yml with use_mock_values=True at /tmp/tmp4xxqv_79/profiles.yml with the following contents:
+dbt_tp:
+    outputs:
+        dev:
+            dbname: postgres
+            host: mock_value
+            password: mock_value
+            port: 5432
+            schema: public
+            type: postgres
+            user: mock_value
+    target: dev
+[2024-06-13T21:19:02.700+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:19:02.700+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt deps --project-dir /tmp/tmpk7dwtarb --profiles-dir /tmp/tmp4xxqv_79 --profile dbt_tp --target dev`
+[2024-06-13T21:19:04.779+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:19:04.779+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt ls --output json --project-dir /tmp/tmpk7dwtarb --profiles-dir /tmp/tmp4xxqv_79 --profile dbt_tp --target dev`
+[2024-06-13T21:19:06.290+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:19:06.290+0000] {graph.py:190} INFO - Total nodes: 6
+[2024-06-13T21:19:06.290+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:19:06.290+0000] {graph.py:191} INFO - Total filtered nodes: 6
+[2024-06-13T21:19:06.292+0000] {processor.py:840} INFO - DAG(s) 'run_dbt' retrieved from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:19:06.300+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:19:06.300+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-13T21:19:06.304+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:19:06.303+0000] {dag.py:3954} INFO - Setting next_dagrun for run_dbt to None, run_after=None
+[2024-06-13T21:19:06.311+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/run_dbt.py took 3.623 seconds
+[2024-06-13T21:19:36.507+0000] {processor.py:161} INFO - Started process (PID=558) to work on /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:19:36.508+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/run_dbt.py for tasks to queue
+[2024-06-13T21:19:36.511+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:19:36.510+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:19:36.520+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:19:36.519+0000] {graph.py:242} INFO - Trying to parse the dbt project in `/opt/airflow/dbt_tp` using dbt ls...
+[2024-06-13T21:19:36.522+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:19:36.521+0000] {graph.py:252} INFO - Content of the dbt project dir /opt/airflow/dbt_tp: `['.user.yml', 'dependencies.yml', 'profiles.yml', 'snapshots', 'package-lock.yml', 'Dockerfile', 'tests', 'models', 'README.md', 'macros', '.dockerignore', '.gitignore', 'seeds', 'analyses', 'dbt_project.yml']`
+[2024-06-13T21:19:36.523+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:19:36.523+0000] {graph.py:262} INFO - Partial parse is enabled and the latest partial parse file is /tmp/cosmos/run_dbt__dbt_task_group/target/partial_parse.msgpack
+[2024-06-13T21:19:36.531+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:19:36.530+0000] {base.py:222} INFO - Using mock values for profile dbt_tp
+[2024-06-13T21:19:36.532+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:19:36.532+0000] {config.py:291} INFO - Creating temporary profiles.yml with use_mock_values=True at /tmp/tmp_dv_iw4m/profiles.yml with the following contents:
+dbt_tp:
+    outputs:
+        dev:
+            dbname: postgres
+            host: mock_value
+            password: mock_value
+            port: 5432
+            schema: public
+            type: postgres
+            user: mock_value
+    target: dev
+[2024-06-13T21:19:36.532+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:19:36.532+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt deps --project-dir /tmp/tmpboag63qh --profiles-dir /tmp/tmp_dv_iw4m --profile dbt_tp --target dev`
+[2024-06-13T21:19:38.628+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:19:38.628+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt ls --output json --project-dir /tmp/tmpboag63qh --profiles-dir /tmp/tmp_dv_iw4m --profile dbt_tp --target dev`
+[2024-06-13T21:19:40.084+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:19:40.084+0000] {graph.py:190} INFO - Total nodes: 6
+[2024-06-13T21:19:40.084+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:19:40.084+0000] {graph.py:191} INFO - Total filtered nodes: 6
+[2024-06-13T21:19:40.086+0000] {processor.py:840} INFO - DAG(s) 'run_dbt' retrieved from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:19:40.094+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:19:40.094+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-13T21:19:40.098+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:19:40.098+0000] {dag.py:3954} INFO - Setting next_dagrun for run_dbt to None, run_after=None
+[2024-06-13T21:19:40.105+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/run_dbt.py took 3.606 seconds
+[2024-06-13T21:20:10.286+0000] {processor.py:161} INFO - Started process (PID=575) to work on /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:20:10.288+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/run_dbt.py for tasks to queue
+[2024-06-13T21:20:10.290+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:20:10.289+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:20:10.298+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:20:10.297+0000] {graph.py:242} INFO - Trying to parse the dbt project in `/opt/airflow/dbt_tp` using dbt ls...
+[2024-06-13T21:20:10.299+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:20:10.299+0000] {graph.py:252} INFO - Content of the dbt project dir /opt/airflow/dbt_tp: `['.user.yml', 'dependencies.yml', 'profiles.yml', 'snapshots', 'package-lock.yml', 'Dockerfile', 'tests', 'models', 'README.md', 'macros', '.dockerignore', '.gitignore', 'seeds', 'analyses', 'dbt_project.yml']`
+[2024-06-13T21:20:10.301+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:20:10.301+0000] {graph.py:262} INFO - Partial parse is enabled and the latest partial parse file is /tmp/cosmos/run_dbt__dbt_task_group/target/partial_parse.msgpack
+[2024-06-13T21:20:10.309+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:20:10.309+0000] {base.py:222} INFO - Using mock values for profile dbt_tp
+[2024-06-13T21:20:10.311+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:20:10.310+0000] {config.py:291} INFO - Creating temporary profiles.yml with use_mock_values=True at /tmp/tmp5vpo4pad/profiles.yml with the following contents:
+dbt_tp:
+    outputs:
+        dev:
+            dbname: postgres
+            host: mock_value
+            password: mock_value
+            port: 5432
+            schema: public
+            type: postgres
+            user: mock_value
+    target: dev
+[2024-06-13T21:20:10.311+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:20:10.311+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt deps --project-dir /tmp/tmp00kpuaao --profiles-dir /tmp/tmp5vpo4pad --profile dbt_tp --target dev`
+[2024-06-13T21:20:12.447+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:20:12.447+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt ls --output json --project-dir /tmp/tmp00kpuaao --profiles-dir /tmp/tmp5vpo4pad --profile dbt_tp --target dev`
+[2024-06-13T21:20:13.917+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:20:13.917+0000] {graph.py:190} INFO - Total nodes: 6
+[2024-06-13T21:20:13.917+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:20:13.917+0000] {graph.py:191} INFO - Total filtered nodes: 6
+[2024-06-13T21:20:13.919+0000] {processor.py:840} INFO - DAG(s) 'run_dbt' retrieved from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:20:13.928+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:20:13.928+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-13T21:20:13.932+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:20:13.932+0000] {dag.py:3954} INFO - Setting next_dagrun for run_dbt to None, run_after=None
+[2024-06-13T21:20:13.940+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/run_dbt.py took 3.661 seconds
+[2024-06-13T21:20:44.103+0000] {processor.py:161} INFO - Started process (PID=592) to work on /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:20:44.104+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/run_dbt.py for tasks to queue
+[2024-06-13T21:20:44.106+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:20:44.105+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:20:44.114+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:20:44.114+0000] {graph.py:242} INFO - Trying to parse the dbt project in `/opt/airflow/dbt_tp` using dbt ls...
+[2024-06-13T21:20:44.116+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:20:44.116+0000] {graph.py:252} INFO - Content of the dbt project dir /opt/airflow/dbt_tp: `['.user.yml', 'dependencies.yml', 'profiles.yml', 'snapshots', 'package-lock.yml', 'Dockerfile', 'tests', 'models', 'README.md', 'macros', '.dockerignore', '.gitignore', 'seeds', 'analyses', 'dbt_project.yml']`
+[2024-06-13T21:20:44.118+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:20:44.117+0000] {graph.py:262} INFO - Partial parse is enabled and the latest partial parse file is /tmp/cosmos/run_dbt__dbt_task_group/target/partial_parse.msgpack
+[2024-06-13T21:20:44.125+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:20:44.124+0000] {base.py:222} INFO - Using mock values for profile dbt_tp
+[2024-06-13T21:20:44.126+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:20:44.126+0000] {config.py:291} INFO - Creating temporary profiles.yml with use_mock_values=True at /tmp/tmpee3e9bmk/profiles.yml with the following contents:
+dbt_tp:
+    outputs:
+        dev:
+            dbname: postgres
+            host: mock_value
+            password: mock_value
+            port: 5432
+            schema: public
+            type: postgres
+            user: mock_value
+    target: dev
+[2024-06-13T21:20:44.127+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:20:44.127+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt deps --project-dir /tmp/tmph9w38hiu --profiles-dir /tmp/tmpee3e9bmk --profile dbt_tp --target dev`
+[2024-06-13T21:20:46.323+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:20:46.323+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt ls --output json --project-dir /tmp/tmph9w38hiu --profiles-dir /tmp/tmpee3e9bmk --profile dbt_tp --target dev`
+[2024-06-13T21:20:47.792+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:20:47.791+0000] {graph.py:190} INFO - Total nodes: 6
+[2024-06-13T21:20:47.792+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:20:47.792+0000] {graph.py:191} INFO - Total filtered nodes: 6
+[2024-06-13T21:20:47.793+0000] {processor.py:840} INFO - DAG(s) 'run_dbt' retrieved from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:20:47.802+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:20:47.802+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-13T21:20:47.806+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:20:47.805+0000] {dag.py:3954} INFO - Setting next_dagrun for run_dbt to None, run_after=None
+[2024-06-13T21:20:47.813+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/run_dbt.py took 3.717 seconds
+[2024-06-13T21:21:17.971+0000] {processor.py:161} INFO - Started process (PID=609) to work on /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:21:17.973+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/run_dbt.py for tasks to queue
+[2024-06-13T21:21:17.976+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:21:17.975+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:21:17.985+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:21:17.984+0000] {graph.py:242} INFO - Trying to parse the dbt project in `/opt/airflow/dbt_tp` using dbt ls...
+[2024-06-13T21:21:17.986+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:21:17.986+0000] {graph.py:252} INFO - Content of the dbt project dir /opt/airflow/dbt_tp: `['.user.yml', 'dependencies.yml', 'profiles.yml', 'snapshots', 'package-lock.yml', 'Dockerfile', 'tests', 'models', 'README.md', 'macros', '.dockerignore', '.gitignore', 'seeds', 'analyses', 'dbt_project.yml']`
+[2024-06-13T21:21:17.988+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:21:17.988+0000] {graph.py:262} INFO - Partial parse is enabled and the latest partial parse file is /tmp/cosmos/run_dbt__dbt_task_group/target/partial_parse.msgpack
+[2024-06-13T21:21:17.996+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:21:17.996+0000] {base.py:222} INFO - Using mock values for profile dbt_tp
+[2024-06-13T21:21:17.998+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:21:17.998+0000] {config.py:291} INFO - Creating temporary profiles.yml with use_mock_values=True at /tmp/tmpksu0gars/profiles.yml with the following contents:
+dbt_tp:
+    outputs:
+        dev:
+            dbname: postgres
+            host: mock_value
+            password: mock_value
+            port: 5432
+            schema: public
+            type: postgres
+            user: mock_value
+    target: dev
+[2024-06-13T21:21:17.998+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:21:17.998+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt deps --project-dir /tmp/tmpqudjxrcb --profiles-dir /tmp/tmpksu0gars --profile dbt_tp --target dev`
+[2024-06-13T21:21:20.585+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:21:20.585+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt ls --output json --project-dir /tmp/tmpqudjxrcb --profiles-dir /tmp/tmpksu0gars --profile dbt_tp --target dev`
+[2024-06-13T21:21:22.059+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:21:22.059+0000] {graph.py:190} INFO - Total nodes: 6
+[2024-06-13T21:21:22.060+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:21:22.060+0000] {graph.py:191} INFO - Total filtered nodes: 6
+[2024-06-13T21:21:22.061+0000] {processor.py:840} INFO - DAG(s) 'run_dbt' retrieved from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:21:22.069+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:21:22.069+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-13T21:21:22.073+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:21:22.073+0000] {dag.py:3954} INFO - Setting next_dagrun for run_dbt to None, run_after=None
+[2024-06-13T21:21:22.080+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/run_dbt.py took 4.117 seconds
+[2024-06-13T21:21:52.250+0000] {processor.py:161} INFO - Started process (PID=628) to work on /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:21:52.251+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/run_dbt.py for tasks to queue
+[2024-06-13T21:21:52.254+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:21:52.253+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:21:52.262+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:21:52.262+0000] {graph.py:242} INFO - Trying to parse the dbt project in `/opt/airflow/dbt_tp` using dbt ls...
+[2024-06-13T21:21:52.264+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:21:52.264+0000] {graph.py:252} INFO - Content of the dbt project dir /opt/airflow/dbt_tp: `['.user.yml', 'dependencies.yml', 'profiles.yml', 'snapshots', 'package-lock.yml', 'Dockerfile', 'tests', 'models', 'README.md', 'macros', '.dockerignore', '.gitignore', 'seeds', 'analyses', 'dbt_project.yml']`
+[2024-06-13T21:21:52.266+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:21:52.266+0000] {graph.py:262} INFO - Partial parse is enabled and the latest partial parse file is /tmp/cosmos/run_dbt__dbt_task_group/target/partial_parse.msgpack
+[2024-06-13T21:21:52.273+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:21:52.273+0000] {base.py:222} INFO - Using mock values for profile dbt_tp
+[2024-06-13T21:21:52.275+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:21:52.275+0000] {config.py:291} INFO - Creating temporary profiles.yml with use_mock_values=True at /tmp/tmp95sjqgmb/profiles.yml with the following contents:
+dbt_tp:
+    outputs:
+        dev:
+            dbname: postgres
+            host: mock_value
+            password: mock_value
+            port: 5432
+            schema: public
+            type: postgres
+            user: mock_value
+    target: dev
+[2024-06-13T21:21:52.275+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:21:52.275+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt deps --project-dir /tmp/tmpury1jrv3 --profiles-dir /tmp/tmp95sjqgmb --profile dbt_tp --target dev`
+[2024-06-13T21:21:54.318+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:21:54.318+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt ls --output json --project-dir /tmp/tmpury1jrv3 --profiles-dir /tmp/tmp95sjqgmb --profile dbt_tp --target dev`
+[2024-06-13T21:21:55.800+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:21:55.800+0000] {graph.py:190} INFO - Total nodes: 6
+[2024-06-13T21:21:55.801+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:21:55.800+0000] {graph.py:191} INFO - Total filtered nodes: 6
+[2024-06-13T21:21:55.802+0000] {processor.py:840} INFO - DAG(s) 'run_dbt' retrieved from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:21:55.810+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:21:55.810+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-13T21:21:55.814+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:21:55.814+0000] {dag.py:3954} INFO - Setting next_dagrun for run_dbt to None, run_after=None
+[2024-06-13T21:21:55.822+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/run_dbt.py took 3.579 seconds
+[2024-06-13T21:22:25.944+0000] {processor.py:161} INFO - Started process (PID=635) to work on /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:22:25.945+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/run_dbt.py for tasks to queue
+[2024-06-13T21:22:25.947+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:22:25.947+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:22:25.956+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:22:25.955+0000] {graph.py:242} INFO - Trying to parse the dbt project in `/opt/airflow/dbt_tp` using dbt ls...
+[2024-06-13T21:22:25.957+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:22:25.957+0000] {graph.py:252} INFO - Content of the dbt project dir /opt/airflow/dbt_tp: `['.user.yml', 'dependencies.yml', 'profiles.yml', 'snapshots', 'package-lock.yml', 'Dockerfile', 'tests', 'models', 'README.md', 'macros', '.dockerignore', '.gitignore', 'seeds', 'analyses', 'dbt_project.yml']`
+[2024-06-13T21:22:25.959+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:22:25.959+0000] {graph.py:262} INFO - Partial parse is enabled and the latest partial parse file is /tmp/cosmos/run_dbt__dbt_task_group/target/partial_parse.msgpack
+[2024-06-13T21:22:25.966+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:22:25.966+0000] {base.py:222} INFO - Using mock values for profile dbt_tp
+[2024-06-13T21:22:25.968+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:22:25.967+0000] {config.py:291} INFO - Creating temporary profiles.yml with use_mock_values=True at /tmp/tmp2w4fp8sw/profiles.yml with the following contents:
+dbt_tp:
+    outputs:
+        dev:
+            dbname: postgres
+            host: mock_value
+            password: mock_value
+            port: 5432
+            schema: public
+            type: postgres
+            user: mock_value
+    target: dev
+[2024-06-13T21:22:25.968+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:22:25.968+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt deps --project-dir /tmp/tmphn1gnt1_ --profiles-dir /tmp/tmp2w4fp8sw --profile dbt_tp --target dev`
+[2024-06-13T21:22:27.977+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:22:27.977+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt ls --output json --project-dir /tmp/tmphn1gnt1_ --profiles-dir /tmp/tmp2w4fp8sw --profile dbt_tp --target dev`
+[2024-06-13T21:22:29.389+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:22:29.388+0000] {graph.py:190} INFO - Total nodes: 6
+[2024-06-13T21:22:29.389+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:22:29.389+0000] {graph.py:191} INFO - Total filtered nodes: 6
+[2024-06-13T21:22:29.391+0000] {processor.py:840} INFO - DAG(s) 'run_dbt' retrieved from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:22:29.398+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:22:29.398+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-13T21:22:29.402+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:22:29.402+0000] {dag.py:3954} INFO - Setting next_dagrun for run_dbt to None, run_after=None
+[2024-06-13T21:22:29.410+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/run_dbt.py took 3.473 seconds
+[2024-06-13T21:22:59.545+0000] {processor.py:161} INFO - Started process (PID=642) to work on /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:22:59.547+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/run_dbt.py for tasks to queue
+[2024-06-13T21:22:59.550+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:22:59.549+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:22:59.559+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:22:59.558+0000] {graph.py:242} INFO - Trying to parse the dbt project in `/opt/airflow/dbt_tp` using dbt ls...
+[2024-06-13T21:22:59.560+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:22:59.560+0000] {graph.py:252} INFO - Content of the dbt project dir /opt/airflow/dbt_tp: `['.user.yml', 'dependencies.yml', 'profiles.yml', 'snapshots', 'package-lock.yml', 'Dockerfile', 'tests', 'models', 'README.md', 'macros', '.dockerignore', '.gitignore', 'seeds', 'analyses', 'dbt_project.yml']`
+[2024-06-13T21:22:59.562+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:22:59.562+0000] {graph.py:262} INFO - Partial parse is enabled and the latest partial parse file is /tmp/cosmos/run_dbt__dbt_task_group/target/partial_parse.msgpack
+[2024-06-13T21:22:59.572+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:22:59.572+0000] {base.py:222} INFO - Using mock values for profile dbt_tp
+[2024-06-13T21:22:59.573+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:22:59.573+0000] {config.py:291} INFO - Creating temporary profiles.yml with use_mock_values=True at /tmp/tmpyf7uwx_x/profiles.yml with the following contents:
+dbt_tp:
+    outputs:
+        dev:
+            dbname: postgres
+            host: mock_value
+            password: mock_value
+            port: 5432
+            schema: public
+            type: postgres
+            user: mock_value
+    target: dev
+[2024-06-13T21:22:59.574+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:22:59.574+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt deps --project-dir /tmp/tmpbdy4h7p_ --profiles-dir /tmp/tmpyf7uwx_x --profile dbt_tp --target dev`
+[2024-06-13T21:23:02.785+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:23:02.784+0000] {graph.py:76} INFO - Running command: `/usr/local/bin/dbt ls --output json --project-dir /tmp/tmpbdy4h7p_ --profiles-dir /tmp/tmpyf7uwx_x --profile dbt_tp --target dev`
+[2024-06-13T21:23:04.275+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:23:04.275+0000] {graph.py:190} INFO - Total nodes: 6
+[2024-06-13T21:23:04.276+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:23:04.276+0000] {graph.py:191} INFO - Total filtered nodes: 6
+[2024-06-13T21:23:04.278+0000] {processor.py:840} INFO - DAG(s) 'run_dbt' retrieved from /opt/airflow/dags/run_dbt.py
+[2024-06-13T21:23:04.288+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:23:04.288+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-13T21:23:04.293+0000] {logging_mixin.py:188} INFO - [2024-06-13T21:23:04.293+0000] {dag.py:3954} INFO - Setting next_dagrun for run_dbt to None, run_after=None
+[2024-06-13T21:23:04.302+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/run_dbt.py took 4.767 seconds
