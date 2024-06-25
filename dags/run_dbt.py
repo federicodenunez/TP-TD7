@@ -66,6 +66,9 @@ with DAG(
         ),
     )
 
+    # hago un python op para hacer la gen de los datos y hacer el dbt justo dsps
+    #bla = PythonOperator
+
     dbt_task_group = DbtTaskGroup(
         group_id="dbt_task_group",
         profile_config=profile_config,
@@ -83,4 +86,4 @@ with DAG(
         callback=copy_docs,
     )
 
-    dbt_task_group >> generate_dbt_docs
+    #bla >> dbt_task_group >> generate_dbt_docs

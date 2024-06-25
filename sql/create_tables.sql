@@ -10,10 +10,12 @@ CREATE TABLE Conductores (
 -- creo una flag activo para ver si el conductor esta activo en la temporada o no
 
 -- Crear tabla de Equipos
+-- quiza le tengo q poner un flag activo para la el dag de cada carrera.
 CREATE TABLE Equipos (
     Nombre VARCHAR(255) PRIMARY KEY,
     Pais VARCHAR(100) NOT NULL,
     Ano_creacion INT CHECK (Ano_creacion BETWEEN 1800 AND EXTRACT(YEAR FROM CURRENT_DATE))
+    activo BOOLEAN
 );
 
 -- Crear tabla de Sponsors

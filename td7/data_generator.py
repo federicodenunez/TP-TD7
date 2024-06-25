@@ -6,7 +6,8 @@ import uuid
 
 from td7.custom_types import Records
 
-PHONE_PROBABILITY = 0.7
+# innecesario
+# PHONE_PROBABILITY = 0.7
 
 
 class DataGenerator:
@@ -27,7 +28,7 @@ class DataGenerator:
                 'nombre': self.fake.first_name(),
                 'nacionalidad': self.fake.country(),
                 'fecha_nacimiento': self.fake.date_of_birth(minimum_age=18, maximum_age=50),
-                'activo': "TRUE"
+                'activo': "True"
             }
             conductores.append(conductor)
         return conductores
@@ -38,7 +39,8 @@ class DataGenerator:
             equipo = {
                 'Nombre': self.fake.company(),
                 'Pais': self.fake.country(),
-                'Ano_creacion': random.randint(1800, datetime.datetime.now().year)
+                'Ano_creacion': random.randint(1800, datetime.datetime.now().year),
+                'activo': "True"
             }
             equipos.append(equipo)
         return equipos
@@ -74,21 +76,20 @@ class DataGenerator:
             gps.append(gp)
         return gps
 
-    def generate_una_edicion(self, GP):
+    def generate_una_edicion(self, GP, year:int, nro_carrera:int):
         # TO DO: hacer que sea una unica edicion
         # Tenemos que hacer que sea por un GP, con GP como parametro
         edicion = {
                     'Ano_carrera': year, # algo tenemos q meter para el año
                     'Nombre_carrera': GP['Nombre'],
-                    'nro_carrera': random.randint(1, 50),
+                    'nro_carrera': nro_carrera,
                     'vuelta_record': random.randint(0, 300)
                 }
         return edicion
 
-    def generate_participan_en(equipos, ediciones):
+    def generate_participan_en(equipos, edicion):
         participan_en = []
-        for edicion in ediciones:
-            for equipo in random.sample(equipos, random.randint(1, len(equipos))):
+        for equipo in equipos:
                 participation = {
                     'Nombre_equipo': equipo['Nombre'],
                     'Ano_carrera': edicion['Ano_carrera'],
@@ -126,37 +127,67 @@ class DataGenerator:
                 maneja_para.append(manejo)
         return maneja_para
 
-    def generate_maneja_en(conductores, ediciones, vehiculos):
+    def generate_maneja_en(conductores, edicion, vehiculos):
         maneja_en = []
-        for edicion in ediciones:
-            for conductor in conductores:
-                vehiculo = random.choice(vehiculos)
-                carrera = {
-                    'ID_conductor': conductor['id'],
-                    'Ano_carrera': edicion['Ano_carrera'],
-                    'Nombre_carrera': edicion['Nombre_carrera'],
-                    'ID_Vehiculo': vehiculo['id'],
-                    'posicion_inicial': random.randint(1, 20),
-                    'posicion': random.randint(1, 20)
-                }
-                maneja_en.append(carrera)
+        shuffled_conductores = random.sample(conductores, len(conductores))  # Randomizo el orden de los conductores
+        shuffled_positions_initial = random.sample(range(1, len(conductores) + 1), len(conductores))  # Randomizo posiciones iniciales
+        shuffled_positions = list(range(1, 21))  # Randomizo posiciones finales
+        for i, conductor in enumerate(shuffled_conductores):
+            vehiculo = random.choice(vehiculos)
+            carrera = {
+                'ID_conductor': conductor['id'],
+                'Ano_carrera': edicion['Ano_carrera'],
+                'Nombre_carrera': edicion['Nombre_carrera'],
+                'ID_Vehiculo': vehiculo['id'],
+                'posicion_inicial': shuffled_positions_initial[i],
+                'posicion': shuffled_positions[i]  
+            }
+        maneja_en.append(carrera)
         return maneja_en
 
-    def generate_mediciones(vehiculos, ediciones):
+    # TODO, mejorar mediciones.
+    def generate_mediciones(vehiculos, edicion, climate:str):
         mediciones = []
         tipos = ['temp_motor', 'presion_ruedas', 'temp_cabina']
-        for edicion in ediciones:
+        if climate == "sunny":
+                for vehiculo in vehiculos:
+                    for _ in range(random.randint(500, 2500)):
+                        medicion = {
+                            'Id_Vehiculo': vehiculo['id'],
+                            'Ano_carrera': edicion['Ano_carrera'],
+                            'Nombre_carrera': edicion['Nombre_carrera'],
+                            'tiempo_carrera': fake.date_time_this_year(), # aca tenemos
+                            # que meter el tiempo desde 0 para hacer una time series
+                            'tipo': random.choice(tipos),
+                            'medicion': random.uniform(-100, 4000)
+                        }
+                        mediciones.append(medicion)
+        if climate == "rainy":
             for vehiculo in vehiculos:
-                for _ in range(random.randint(10, 50)):
-                    medicion = {
-                        'Id_Vehiculo': vehiculo['id'],
-                        'Ano_carrera': edicion['Ano_carrera'],
-                        'Nombre_carrera': edicion['Nombre_carrera'],
-                        'tiempo_carrera': fake.date_time_this_year(),
-                        'tipo': random.choice(tipos),
-                        'medicion': random.uniform(-100, 4000)
-                    }
-                    mediciones.append(medicion)
+                    for _ in range(random.randint(500, 2500)):
+                        medicion = {
+                            'Id_Vehiculo': vehiculo['id'],
+                            'Ano_carrera': edicion['Ano_carrera'],
+                            'Nombre_carrera': edicion['Nombre_carrera'],
+                            'tiempo_carrera': fake.date_time_this_year(), # aca tenemos
+                            # que meter el tiempo desde 0 para hacer una time series
+                            'tipo': random.choice(tipos),
+                            'medicion': random.uniform(-100, 4000)
+                        }
+                        mediciones.append(medicion)
+        if climate == "stormy":
+            for vehiculo in vehiculos:
+                    for _ in range(random.randint(500, 2500)):
+                        medicion = {
+                            'Id_Vehiculo': vehiculo['id'],
+                            'Ano_carrera': edicion['Ano_carrera'],
+                            'Nombre_carrera': edicion['Nombre_carrera'],
+                            'tiempo_carrera': fake.date_time_this_year(), # aca tenemos
+                            # que meter el tiempo desde 0 para hacer una time series
+                            'tipo': random.choice(tipos),
+                            'medicion': random.uniform(-100, 4000)
+                        }
+                        mediciones.append(medicion)
         return mediciones
 
 

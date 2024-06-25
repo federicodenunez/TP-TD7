@@ -2242,3 +2242,751 @@ Traceback (most recent call last):
 SyntaxError: cannot delete function call
 [2024-06-21T21:34:34.313+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fill_data.py
 [2024-06-21T21:34:34.327+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fill_data.py took 0.033 seconds
+[2024-06-21T22:13:57.135+0000] {processor.py:161} INFO - Started process (PID=13) to work on /opt/airflow/dags/fill_data.py
+[2024-06-21T22:13:57.136+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fill_data.py for tasks to queue
+[2024-06-21T22:13:57.137+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:13:57.137+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:13:57.140+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:13:57.139+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/fill_data.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/fill_data.py", line 39
+    del equipos_actuales(random_equipo)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot delete function call
+[2024-06-21T22:13:57.140+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:13:57.148+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fill_data.py took 0.016 seconds
+[2024-06-21T22:14:28.276+0000] {processor.py:161} INFO - Started process (PID=26) to work on /opt/airflow/dags/fill_data.py
+[2024-06-21T22:14:28.278+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fill_data.py for tasks to queue
+[2024-06-21T22:14:28.281+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:14:28.280+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:14:28.288+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:14:28.287+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/fill_data.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/fill_data.py", line 39
+    del equipos_actuales(random_equipo)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot delete function call
+[2024-06-21T22:14:28.288+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:14:28.306+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fill_data.py took 0.039 seconds
+[2024-06-21T22:14:58.693+0000] {processor.py:161} INFO - Started process (PID=33) to work on /opt/airflow/dags/fill_data.py
+[2024-06-21T22:14:58.694+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fill_data.py for tasks to queue
+[2024-06-21T22:14:58.696+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:14:58.696+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:14:58.703+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:14:58.702+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/fill_data.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/fill_data.py", line 39
+    del equipos_actuales(random_equipo)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot delete function call
+[2024-06-21T22:14:58.704+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:14:58.717+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fill_data.py took 0.031 seconds
+[2024-06-21T22:15:29.065+0000] {processor.py:161} INFO - Started process (PID=40) to work on /opt/airflow/dags/fill_data.py
+[2024-06-21T22:15:29.066+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fill_data.py for tasks to queue
+[2024-06-21T22:15:29.068+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:15:29.068+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:15:29.073+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:15:29.073+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/fill_data.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/fill_data.py", line 39
+    del equipos_actuales(random_equipo)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot delete function call
+[2024-06-21T22:15:29.074+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:15:29.084+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fill_data.py took 0.025 seconds
+[2024-06-21T22:15:59.285+0000] {processor.py:161} INFO - Started process (PID=47) to work on /opt/airflow/dags/fill_data.py
+[2024-06-21T22:15:59.286+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fill_data.py for tasks to queue
+[2024-06-21T22:15:59.289+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:15:59.289+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:15:59.296+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:15:59.295+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/fill_data.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/fill_data.py", line 39
+    del equipos_actuales(random_equipo)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot delete function call
+[2024-06-21T22:15:59.297+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:15:59.311+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fill_data.py took 0.032 seconds
+[2024-06-21T22:16:29.764+0000] {processor.py:161} INFO - Started process (PID=54) to work on /opt/airflow/dags/fill_data.py
+[2024-06-21T22:16:29.765+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fill_data.py for tasks to queue
+[2024-06-21T22:16:29.767+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:16:29.767+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:16:29.775+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:16:29.773+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/fill_data.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/fill_data.py", line 39
+    del equipos_actuales(random_equipo)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot delete function call
+[2024-06-21T22:16:29.776+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:16:29.790+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fill_data.py took 0.031 seconds
+[2024-06-21T22:17:00.593+0000] {processor.py:161} INFO - Started process (PID=61) to work on /opt/airflow/dags/fill_data.py
+[2024-06-21T22:17:00.594+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fill_data.py for tasks to queue
+[2024-06-21T22:17:00.598+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:17:00.598+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:17:00.605+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:17:00.604+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/fill_data.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/fill_data.py", line 39
+    del equipos_actuales(random_equipo)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot delete function call
+[2024-06-21T22:17:00.606+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:17:00.621+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fill_data.py took 0.036 seconds
+[2024-06-21T22:17:31.075+0000] {processor.py:161} INFO - Started process (PID=68) to work on /opt/airflow/dags/fill_data.py
+[2024-06-21T22:17:31.076+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fill_data.py for tasks to queue
+[2024-06-21T22:17:31.078+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:17:31.078+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:17:31.084+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:17:31.083+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/fill_data.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/fill_data.py", line 39
+    del equipos_actuales(random_equipo)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot delete function call
+[2024-06-21T22:17:31.085+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:17:31.099+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fill_data.py took 0.030 seconds
+[2024-06-21T22:18:03.927+0000] {processor.py:161} INFO - Started process (PID=75) to work on /opt/airflow/dags/fill_data.py
+[2024-06-21T22:18:03.928+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fill_data.py for tasks to queue
+[2024-06-21T22:18:03.930+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:18:03.930+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:18:03.936+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:18:03.935+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/fill_data.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/fill_data.py", line 39
+    del equipos_actuales(random_equipo)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot delete function call
+[2024-06-21T22:18:03.936+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:18:03.950+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fill_data.py took 0.030 seconds
+[2024-06-21T22:18:37.721+0000] {processor.py:161} INFO - Started process (PID=82) to work on /opt/airflow/dags/fill_data.py
+[2024-06-21T22:18:37.722+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fill_data.py for tasks to queue
+[2024-06-21T22:18:37.723+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:18:37.723+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:18:37.726+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:18:37.725+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/fill_data.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/fill_data.py", line 39
+    del equipos_actuales(random_equipo)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot delete function call
+[2024-06-21T22:18:37.726+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:18:37.733+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fill_data.py took 0.015 seconds
+[2024-06-21T22:19:11.442+0000] {processor.py:161} INFO - Started process (PID=89) to work on /opt/airflow/dags/fill_data.py
+[2024-06-21T22:19:11.443+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fill_data.py for tasks to queue
+[2024-06-21T22:19:11.445+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:19:11.445+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:19:11.452+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:19:11.451+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/fill_data.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/fill_data.py", line 39
+    del equipos_actuales(random_equipo)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot delete function call
+[2024-06-21T22:19:11.452+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:19:11.466+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fill_data.py took 0.030 seconds
+[2024-06-21T22:19:46.252+0000] {processor.py:161} INFO - Started process (PID=96) to work on /opt/airflow/dags/fill_data.py
+[2024-06-21T22:19:46.253+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fill_data.py for tasks to queue
+[2024-06-21T22:19:46.255+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:19:46.254+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:19:46.259+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:19:46.258+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/fill_data.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/fill_data.py", line 39
+    del equipos_actuales(random_equipo)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot delete function call
+[2024-06-21T22:19:46.260+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:19:46.268+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fill_data.py took 0.020 seconds
+[2024-06-21T22:20:20.045+0000] {processor.py:161} INFO - Started process (PID=103) to work on /opt/airflow/dags/fill_data.py
+[2024-06-21T22:20:20.046+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fill_data.py for tasks to queue
+[2024-06-21T22:20:20.049+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:20:20.048+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:20:20.054+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:20:20.053+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/fill_data.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/fill_data.py", line 39
+    del equipos_actuales(random_equipo)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot delete function call
+[2024-06-21T22:20:20.054+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:20:20.067+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fill_data.py took 0.027 seconds
+[2024-06-21T22:20:54.248+0000] {processor.py:161} INFO - Started process (PID=110) to work on /opt/airflow/dags/fill_data.py
+[2024-06-21T22:20:54.250+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fill_data.py for tasks to queue
+[2024-06-21T22:20:54.251+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:20:54.251+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:20:54.257+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:20:54.256+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/fill_data.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/fill_data.py", line 39
+    del equipos_actuales(random_equipo)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot delete function call
+[2024-06-21T22:20:54.258+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:20:54.270+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fill_data.py took 0.028 seconds
+[2024-06-21T22:21:28.221+0000] {processor.py:161} INFO - Started process (PID=117) to work on /opt/airflow/dags/fill_data.py
+[2024-06-21T22:21:28.223+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fill_data.py for tasks to queue
+[2024-06-21T22:21:28.225+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:21:28.225+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:21:28.230+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:21:28.229+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/fill_data.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/fill_data.py", line 39
+    del equipos_actuales(random_equipo)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot delete function call
+[2024-06-21T22:21:28.231+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:21:28.306+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fill_data.py took 0.095 seconds
+[2024-06-21T22:22:02.340+0000] {processor.py:161} INFO - Started process (PID=124) to work on /opt/airflow/dags/fill_data.py
+[2024-06-21T22:22:02.341+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fill_data.py for tasks to queue
+[2024-06-21T22:22:02.343+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:22:02.342+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:22:02.347+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:22:02.346+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/fill_data.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/fill_data.py", line 39
+    del equipos_actuales(random_equipo)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot delete function call
+[2024-06-21T22:22:02.347+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:22:02.359+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fill_data.py took 0.023 seconds
+[2024-06-21T22:22:36.946+0000] {processor.py:161} INFO - Started process (PID=131) to work on /opt/airflow/dags/fill_data.py
+[2024-06-21T22:22:36.947+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fill_data.py for tasks to queue
+[2024-06-21T22:22:36.949+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:22:36.948+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:22:36.953+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:22:36.952+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/fill_data.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/fill_data.py", line 39
+    del equipos_actuales(random_equipo)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot delete function call
+[2024-06-21T22:22:36.954+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:22:36.964+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fill_data.py took 0.024 seconds
+[2024-06-21T22:23:10.725+0000] {processor.py:161} INFO - Started process (PID=138) to work on /opt/airflow/dags/fill_data.py
+[2024-06-21T22:23:10.726+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fill_data.py for tasks to queue
+[2024-06-21T22:23:10.727+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:23:10.727+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:23:10.730+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:23:10.730+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/fill_data.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/fill_data.py", line 39
+    del equipos_actuales(random_equipo)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot delete function call
+[2024-06-21T22:23:10.731+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:23:10.740+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fill_data.py took 0.020 seconds
+[2024-06-21T22:23:44.491+0000] {processor.py:161} INFO - Started process (PID=145) to work on /opt/airflow/dags/fill_data.py
+[2024-06-21T22:23:44.492+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fill_data.py for tasks to queue
+[2024-06-21T22:23:44.494+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:23:44.494+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:23:44.499+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:23:44.498+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/fill_data.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/fill_data.py", line 39
+    del equipos_actuales(random_equipo)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot delete function call
+[2024-06-21T22:23:44.500+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:23:44.510+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fill_data.py took 0.025 seconds
+[2024-06-21T22:24:18.167+0000] {processor.py:161} INFO - Started process (PID=152) to work on /opt/airflow/dags/fill_data.py
+[2024-06-21T22:24:18.169+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fill_data.py for tasks to queue
+[2024-06-21T22:24:18.171+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:24:18.171+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:24:18.178+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:24:18.177+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/fill_data.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/fill_data.py", line 39
+    del equipos_actuales(random_equipo)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot delete function call
+[2024-06-21T22:24:18.178+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:24:18.193+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fill_data.py took 0.032 seconds
+[2024-06-21T22:24:53.052+0000] {processor.py:161} INFO - Started process (PID=159) to work on /opt/airflow/dags/fill_data.py
+[2024-06-21T22:24:53.054+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fill_data.py for tasks to queue
+[2024-06-21T22:24:53.055+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:24:53.055+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:24:53.061+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:24:53.060+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/fill_data.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/fill_data.py", line 39
+    del equipos_actuales(random_equipo)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot delete function call
+[2024-06-21T22:24:53.062+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:24:53.075+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fill_data.py took 0.029 seconds
+[2024-06-21T22:25:26.893+0000] {processor.py:161} INFO - Started process (PID=166) to work on /opt/airflow/dags/fill_data.py
+[2024-06-21T22:25:26.894+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fill_data.py for tasks to queue
+[2024-06-21T22:25:26.895+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:25:26.895+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:25:26.900+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:25:26.899+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/fill_data.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/fill_data.py", line 39
+    del equipos_actuales(random_equipo)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot delete function call
+[2024-06-21T22:25:26.900+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:25:26.911+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fill_data.py took 0.024 seconds
+[2024-06-21T22:26:00.959+0000] {processor.py:161} INFO - Started process (PID=173) to work on /opt/airflow/dags/fill_data.py
+[2024-06-21T22:26:00.960+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fill_data.py for tasks to queue
+[2024-06-21T22:26:00.962+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:26:00.962+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:26:00.966+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:26:00.965+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/fill_data.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/fill_data.py", line 39
+    del equipos_actuales(random_equipo)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot delete function call
+[2024-06-21T22:26:00.966+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:26:00.975+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fill_data.py took 0.022 seconds
+[2024-06-21T22:26:34.809+0000] {processor.py:161} INFO - Started process (PID=180) to work on /opt/airflow/dags/fill_data.py
+[2024-06-21T22:26:34.810+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fill_data.py for tasks to queue
+[2024-06-21T22:26:34.811+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:26:34.811+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:26:34.816+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:26:34.815+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/fill_data.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/fill_data.py", line 39
+    del equipos_actuales(random_equipo)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot delete function call
+[2024-06-21T22:26:34.816+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:26:34.827+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fill_data.py took 0.023 seconds
+[2024-06-21T22:27:08.509+0000] {processor.py:161} INFO - Started process (PID=187) to work on /opt/airflow/dags/fill_data.py
+[2024-06-21T22:27:08.510+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fill_data.py for tasks to queue
+[2024-06-21T22:27:08.512+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:27:08.512+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:27:08.518+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:27:08.517+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/fill_data.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/fill_data.py", line 39
+    del equipos_actuales(random_equipo)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot delete function call
+[2024-06-21T22:27:08.519+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:27:08.532+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fill_data.py took 0.030 seconds
+[2024-06-21T22:27:42.837+0000] {processor.py:161} INFO - Started process (PID=194) to work on /opt/airflow/dags/fill_data.py
+[2024-06-21T22:27:42.839+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fill_data.py for tasks to queue
+[2024-06-21T22:27:42.841+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:27:42.840+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:27:42.847+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:27:42.846+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/fill_data.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/fill_data.py", line 39
+    del equipos_actuales(random_equipo)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot delete function call
+[2024-06-21T22:27:42.848+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:27:42.862+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fill_data.py took 0.031 seconds
+[2024-06-21T22:28:16.911+0000] {processor.py:161} INFO - Started process (PID=201) to work on /opt/airflow/dags/fill_data.py
+[2024-06-21T22:28:16.912+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fill_data.py for tasks to queue
+[2024-06-21T22:28:16.914+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:28:16.914+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:28:16.921+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:28:16.920+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/fill_data.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/fill_data.py", line 39
+    del equipos_actuales(random_equipo)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot delete function call
+[2024-06-21T22:28:16.922+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:28:16.935+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fill_data.py took 0.033 seconds
+[2024-06-21T22:28:51.009+0000] {processor.py:161} INFO - Started process (PID=208) to work on /opt/airflow/dags/fill_data.py
+[2024-06-21T22:28:51.011+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fill_data.py for tasks to queue
+[2024-06-21T22:28:51.014+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:28:51.013+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:28:51.020+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:28:51.019+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/fill_data.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/fill_data.py", line 39
+    del equipos_actuales(random_equipo)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot delete function call
+[2024-06-21T22:28:51.021+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:28:51.036+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fill_data.py took 0.033 seconds
+[2024-06-21T22:29:24.799+0000] {processor.py:161} INFO - Started process (PID=215) to work on /opt/airflow/dags/fill_data.py
+[2024-06-21T22:29:24.800+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fill_data.py for tasks to queue
+[2024-06-21T22:29:24.802+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:29:24.802+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:29:24.808+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:29:24.807+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/fill_data.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/fill_data.py", line 39
+    del equipos_actuales(random_equipo)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot delete function call
+[2024-06-21T22:29:24.809+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:29:24.822+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fill_data.py took 0.029 seconds
+[2024-06-21T22:29:58.885+0000] {processor.py:161} INFO - Started process (PID=222) to work on /opt/airflow/dags/fill_data.py
+[2024-06-21T22:29:58.886+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fill_data.py for tasks to queue
+[2024-06-21T22:29:58.889+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:29:58.888+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:29:58.896+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:29:58.895+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/fill_data.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/fill_data.py", line 39
+    del equipos_actuales(random_equipo)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot delete function call
+[2024-06-21T22:29:58.897+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:29:58.913+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fill_data.py took 0.036 seconds
+[2024-06-21T22:30:32.579+0000] {processor.py:161} INFO - Started process (PID=229) to work on /opt/airflow/dags/fill_data.py
+[2024-06-21T22:30:32.580+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fill_data.py for tasks to queue
+[2024-06-21T22:30:32.583+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:30:32.582+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:30:32.589+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:30:32.588+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/fill_data.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/fill_data.py", line 39
+    del equipos_actuales(random_equipo)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot delete function call
+[2024-06-21T22:30:32.590+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:30:32.604+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fill_data.py took 0.031 seconds
+[2024-06-21T22:31:06.274+0000] {processor.py:161} INFO - Started process (PID=236) to work on /opt/airflow/dags/fill_data.py
+[2024-06-21T22:31:06.276+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fill_data.py for tasks to queue
+[2024-06-21T22:31:06.277+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:31:06.277+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:31:06.283+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:31:06.282+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/fill_data.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/fill_data.py", line 39
+    del equipos_actuales(random_equipo)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot delete function call
+[2024-06-21T22:31:06.284+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:31:06.297+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fill_data.py took 0.029 seconds
+[2024-06-21T22:31:39.955+0000] {processor.py:161} INFO - Started process (PID=243) to work on /opt/airflow/dags/fill_data.py
+[2024-06-21T22:31:39.956+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fill_data.py for tasks to queue
+[2024-06-21T22:31:39.958+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:31:39.958+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:31:39.965+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:31:39.964+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/fill_data.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/fill_data.py", line 39
+    del equipos_actuales(random_equipo)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot delete function call
+[2024-06-21T22:31:39.966+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:31:39.980+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fill_data.py took 0.031 seconds
+[2024-06-21T22:32:13.949+0000] {processor.py:161} INFO - Started process (PID=250) to work on /opt/airflow/dags/fill_data.py
+[2024-06-21T22:32:13.950+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fill_data.py for tasks to queue
+[2024-06-21T22:32:13.952+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:32:13.951+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:32:13.957+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:32:13.956+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/fill_data.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/fill_data.py", line 39
+    del equipos_actuales(random_equipo)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot delete function call
+[2024-06-21T22:32:13.958+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:32:13.970+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fill_data.py took 0.028 seconds
+[2024-06-21T22:32:47.623+0000] {processor.py:161} INFO - Started process (PID=257) to work on /opt/airflow/dags/fill_data.py
+[2024-06-21T22:32:47.624+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fill_data.py for tasks to queue
+[2024-06-21T22:32:47.625+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:32:47.625+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:32:47.631+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:32:47.630+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/fill_data.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/fill_data.py", line 39
+    del equipos_actuales(random_equipo)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot delete function call
+[2024-06-21T22:32:47.631+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:32:47.644+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fill_data.py took 0.027 seconds
+[2024-06-21T22:33:21.863+0000] {processor.py:161} INFO - Started process (PID=264) to work on /opt/airflow/dags/fill_data.py
+[2024-06-21T22:33:21.865+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fill_data.py for tasks to queue
+[2024-06-21T22:33:21.867+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:33:21.866+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:33:21.873+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:33:21.872+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/fill_data.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/fill_data.py", line 39
+    del equipos_actuales(random_equipo)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot delete function call
+[2024-06-21T22:33:21.874+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:33:21.887+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fill_data.py took 0.030 seconds
+[2024-06-21T22:33:55.667+0000] {processor.py:161} INFO - Started process (PID=271) to work on /opt/airflow/dags/fill_data.py
+[2024-06-21T22:33:55.669+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fill_data.py for tasks to queue
+[2024-06-21T22:33:55.671+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:33:55.671+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:33:55.678+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:33:55.677+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/fill_data.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/fill_data.py", line 39
+    del equipos_actuales(random_equipo)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot delete function call
+[2024-06-21T22:33:55.679+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:33:55.693+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fill_data.py took 0.033 seconds
+[2024-06-21T22:34:29.448+0000] {processor.py:161} INFO - Started process (PID=278) to work on /opt/airflow/dags/fill_data.py
+[2024-06-21T22:34:29.449+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fill_data.py for tasks to queue
+[2024-06-21T22:34:29.451+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:34:29.451+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:34:29.457+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:34:29.456+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/fill_data.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/fill_data.py", line 39
+    del equipos_actuales(random_equipo)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot delete function call
+[2024-06-21T22:34:29.458+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:34:29.471+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fill_data.py took 0.029 seconds
+[2024-06-21T22:35:03.244+0000] {processor.py:161} INFO - Started process (PID=285) to work on /opt/airflow/dags/fill_data.py
+[2024-06-21T22:35:03.245+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fill_data.py for tasks to queue
+[2024-06-21T22:35:03.247+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:35:03.247+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:35:03.254+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:35:03.253+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/fill_data.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/fill_data.py", line 39
+    del equipos_actuales(random_equipo)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot delete function call
+[2024-06-21T22:35:03.255+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:35:03.269+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fill_data.py took 0.031 seconds
+[2024-06-21T22:35:36.929+0000] {processor.py:161} INFO - Started process (PID=292) to work on /opt/airflow/dags/fill_data.py
+[2024-06-21T22:35:36.930+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fill_data.py for tasks to queue
+[2024-06-21T22:35:36.932+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:35:36.931+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:35:36.938+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:35:36.937+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/fill_data.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/fill_data.py", line 39
+    del equipos_actuales(random_equipo)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot delete function call
+[2024-06-21T22:35:36.938+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:35:36.952+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fill_data.py took 0.030 seconds
+[2024-06-21T22:36:10.648+0000] {processor.py:161} INFO - Started process (PID=299) to work on /opt/airflow/dags/fill_data.py
+[2024-06-21T22:36:10.649+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fill_data.py for tasks to queue
+[2024-06-21T22:36:10.651+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:36:10.651+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:36:10.657+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:36:10.656+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/fill_data.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/fill_data.py", line 39
+    del equipos_actuales(random_equipo)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot delete function call
+[2024-06-21T22:36:10.658+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:36:10.671+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fill_data.py took 0.030 seconds
+[2024-06-21T22:36:44.836+0000] {processor.py:161} INFO - Started process (PID=306) to work on /opt/airflow/dags/fill_data.py
+[2024-06-21T22:36:44.837+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fill_data.py for tasks to queue
+[2024-06-21T22:36:44.839+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:36:44.838+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:36:44.844+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:36:44.843+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/fill_data.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/fill_data.py", line 39
+    del equipos_actuales(random_equipo)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot delete function call
+[2024-06-21T22:36:44.844+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:36:44.857+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fill_data.py took 0.027 seconds
+[2024-06-21T22:37:18.831+0000] {processor.py:161} INFO - Started process (PID=313) to work on /opt/airflow/dags/fill_data.py
+[2024-06-21T22:37:18.832+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fill_data.py for tasks to queue
+[2024-06-21T22:37:18.834+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:37:18.834+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:37:18.841+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:37:18.839+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/fill_data.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/fill_data.py", line 39
+    del equipos_actuales(random_equipo)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot delete function call
+[2024-06-21T22:37:18.841+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:37:18.856+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fill_data.py took 0.032 seconds
+[2024-06-21T22:37:52.889+0000] {processor.py:161} INFO - Started process (PID=320) to work on /opt/airflow/dags/fill_data.py
+[2024-06-21T22:37:52.890+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fill_data.py for tasks to queue
+[2024-06-21T22:37:52.892+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:37:52.892+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:37:52.898+0000] {logging_mixin.py:188} INFO - [2024-06-21T22:37:52.897+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/fill_data.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/fill_data.py", line 39
+    del equipos_actuales(random_equipo)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot delete function call
+[2024-06-21T22:37:52.899+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fill_data.py
+[2024-06-21T22:37:52.913+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fill_data.py took 0.031 seconds
